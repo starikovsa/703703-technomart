@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Sergey Starikov](https://up.htmlacademy.ru/htmlcss/23/user/703703).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Рудов] (https://htmlacademy.ru/profile/artrudov).
 
 ---
 
