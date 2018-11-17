@@ -6,35 +6,41 @@
     </head>
     <body>
         <header class="main-header">
-            <a class="header-logo"><img src="http://placehold.it/100x30" width="100" height="30" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
-            <ul class="cart-block">
-                    <li><span class="search">Поиск</span></li>
-                    <li><a class="bookmarks" href="#">Закладки</a></li>
-                    <li><a class="cart" href="#">Корзина</a></li>
-                    <li><a class="checkout" href="#">Оформить заказ</a></li>
+            <div class="main-header-top">
+            <a class="main-header-logo logo"><img class="logo-img" src="http://placehold.it/100x30" width="100" height="30" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
+            <span class="main-header-search">Поиск</span>
+            <ul class="main-header-cart cart-block">
+                    <li class="main-header-list"><a class="main-header-link" href="bookmarks.html">Закладки</a></li>
+                    <li class="main-header-list"><a class="main-header-link" href="cart.html">Корзина</a></li>
+                    <li class="main-header-list"><a class="main-header-link" href="checkout.html">Оформить заказ</a></li>
             </ul>
+            </div>
 
-            <h1>Интернет-магазин строительных материалов и инструментов для ремнота</h1>
-            <span class="visually-hidden">«ТЕХНОМАРТ»</span>
-            <p class="header-contact">
-                    <span class="contact-phone">+7(812) 555-05-55</span>
-                    <span class="contact-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-            </p>
+            <div class="main-header-middle">
+            <h1 class="main-header-title">Интернет-магазин<span class="visually-hidden">«ТЕХНОМАРТ»</span> строительных материалов и инструментов для ремнота</h1>
+            
+            <address class="main-header-contact">
+                    <p>
+                    <span class="header-contact-phone"><a class="header-contact-link" href="tel:+7812550555">+7(812) 555-05-55</a></span>
+                    <span class="header-contact-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                    </p>
+            </address>            
 
-            <ul class="user-navigation">
-                    <li class="login-link">Войти</li>
-                    <li class="registry-link">Регистрация</li>
+            <ul class="main-header-user">
+                    <li class="header-user-login"><a class="header-user-link" href="#">Войти</a></li>
+                    <li class="header-user-registry"><a class="header-user-link" href="#">Регистрация</a></li>
             </ul>
+            </div>
 
-            <nav class="main-navigation">
-                    <ul class="site-navigation">
-                            <li class="site-navigation-list"><a class="site-navigation-link" href="index.html">Главная</a></li>
-                            <li class="site-navigation-list"><a class="site-navigation-link" href="company.html">Компания</a></li>
-                            <li class="site-navigation-list"><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
-                            <li class="site-navigation-list"><a class="site-navigation-link" href="news.html">Новости</a></li>
-                            <li class="site-navigation-list"><a class="site-navigation-link" href="specialoffers.html">Спецпредложения</a></li>
-                            <li class="site-navigation-list"><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
-                            <li class="site-navigation-list"><a class="site-navigation-link" href="contact.html">Контакты</a></li>
+            <nav class="main-header-navigation">
+                    <ul>
+                            <li class="header-navigation-list"><a class="header-navigation-link" href="index.html">Главная</a></li>
+                            <li class="header-navigation-list"><a class="header-navigation-link" href="company.html">Компания</a></li>
+                            <li class="header-navigation-list"><a class="header-navigation-link" href="catalog.html">Каталог</a></li>
+                            <li class="header-navigation-list"><a class="header-navigation-link" href="news.html">Новости</a></li>
+                            <li class="header-navigation-list"><a class="header-navigation-link" href="specialoffers.html">Спецпредложения</a></li>
+                            <li class="header-navigation-list"><a class="header-navigation-link" href="delivery.html">Доставка</a></li>
+                            <li class="header-navigation-list"><a class="header-navigation-link" href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,7 +51,7 @@
         <!--Здесь будет блок популярные производители-->
         <!--Здесь будет блок сервисы-->
             <section class="company">
-                <h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+                <h2 class="company-title">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
                 <p> Настоящий мужской шоппинг начинается здесь! Огромный выбор товарова для ремонта и
                 строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
                 </p>
@@ -61,18 +67,18 @@
             </section>
 
             <section class="contacts">
-                <h2>КОНТАКТЫ</h2>
+                <h2 class="contacts-title">КОНТАКТЫ</h2>
                 <p>Вы можете забрать товар сами,
                   заехав в наш офис:
                 </p>
-                <img src="http://placehold.it/200" width="200" height="200" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                <img class="map" src="http://placehold.it/200" width="200" height="200" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
                 <a class="button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
             </section>
         </main>
 
         <footer class="main-footer">
-            <a class="footer-logo"><img src="http://placehold.it/100x30" width="100" height="30" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
-            <address>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            <a class="footer-logo-link"><img class="footer-logo logo" src="http://placehold.it/100x30" width="100" height="30" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
+            <address class="main-footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             +7(812) 555-05-55</address>
             
             <nav class="main-navigation-footer">
