@@ -5,7 +5,7 @@
                 <title>HTML Academy: Техномарт Каталог</title>
         </head>
         <body>
-                <header class="inner-header">
+                <header class="inner-header"> <!--Шапка сайта-->
                         <div class="inner-header-top">
                         <a class="inner-header-logo logo" href="index.html"><img class="logo-img" src="img/logo.png" width="220" height="47" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
 
@@ -61,30 +61,64 @@
 
                 <h1>Перфораторы</h1>
 
-                <section class="content-filters">
-                        <h2 class="content-filtres-title">Фильтр:</h2>
-                        <h2 class="filtres-title-price">Цена:</h2>
+                <section class="content-filters"> <!--Блок фильтры-->
+                  <h2 class="visually-hidden">Фильтр товаров</h2>
+                  <header>
+                        <h2 class="content-filters-title">Фильтр:</h2>
+                        <h2 class="filters-title-price">Цена:</h2>
                         <!-- Здесь будет форма -->
-                        <span class="content-filtres-price">0-30000</span>
+                        <span class="content-filters-price">0-30000</span>
+                  </header>
+
+                  <form class="content-filters-form" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset class="filters-manufacturers">
+                        <legend class="content-manufacturers-title">ПРОИЗВОДИТЕЛИ:</legend>
+                        <ul class="filters-manufactures-list">
+                          <li class="manufactures-list-option">
+                            <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+                            <label for="bosch">BOSCH</label>
+                          </li>
+
+                          <li class="manufactures-list-option">
+                            <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="interskol" id="interskol">
+                            <label for="interskol">ИНТЕРСКОЛ</label>
+                          </li>
+
+                          <li class="manufactures-list-option">
+                            <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="makita" id="makita" checked>
+                            <label for="makita">MAKITA</label>
+                          </li>
+                          <li class="manufactures-list-option">
+                            <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
+                            <label for="dewalt">DEWALT</label>
+                          </li>
+
+                          <li class="manufactures-list-option">
+                            <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                            <label for="hitachi">HITACHI</label>
+                          </li>
+                        </ul>
+                  </fieldset>
+
+                  <fieldset class="filters-power">
+                        <legend class="filtres-power-title">Питание:</legend>
+                        <ul class="filtres-power-list">
+                          <li class="power-list-option">
+                            <input class="visually-hidden power-input power-input-radio" type="radio" name="battery" value="battery" id="battery" checked>
+                            <label for="battery">АККУМУЛЯТОРНЫЕ</label>
+                          </li>
+
+                          <li class="power-list-option">
+                            <input class="visually-hidden power-input power-input-radio" type="radio" name="battery" value="mains-battery" id="mains-battery">
+                            <label for="mains-battery">СЕТЕВЫЕ</label>
+                          </li>
+                        </ul>
+                  </fieldset>
+                    <button class="filters-form-button" type="submit">Показать</button>
+                  </form>
                 </section>
 
-                <section class="content-manufacturers">
-                        <h2 class="content-manufacturers-title">ПРОИЗВОДИТЕЛИ:</h2>
-                        <span><img src="img/checkbox-on.svg">BOSCH</span>
-                        <span><img src="img/checkbox-off.svg">ИНТЕРСКОЛ</span>
-                        <span><img src="img/checkbox-on.svg">MAKITA</span>
-                        <span><img src="img/checkbox-off.svg">DEWALT</span>
-                        <span><img src="img/checkbox-off.svg">HITACHI</span>
-                </section>
-
-                <section class="content-power">
-                        <h2 class="content-power-title">Питание:</h2>
-                        <span><img src="img/radio-on.svg">АККУМУЛЯТОРНЫЕ</span>
-                        <span><img src="img/radio-off.svg">СЕТЕВЫЕ</span>
-                </section>
-                    <span>Показать</span>
-
-                <section class="content-sorting">
+                <section class="content-sorting"> <!--Блок сортировка-->
                         <h2 class="content-sorting-title">Сортировка:</h2>
 
                         <ul class="content-sorting-list">
@@ -97,7 +131,7 @@
                         <!-- Здесь будет форма -->
                 </section>
 
-                <section class="content-tool">
+                <section class="content-tool"> <!--Блок карточек инструментов-->
                         <h2 class="visually-hidden">Список инструментов</h2>
                         <ul class="content-tool-list">
                                 <li class="tool-list-item">
@@ -215,7 +249,7 @@
                         </ul>
                 </section>
 
-                <div class="content-pages">
+                <div class="content-pages"> <!--Блок нумерации страниц-->
                                 <ul class="content-pages-list">
                                         <li class="pages-list-first list-firs-current"><a class="pages-list-link">1</a></li>
                                         <li class="pages-list-second"><a class="pages-list-link">2</a></li>
@@ -224,7 +258,7 @@
                                 </ul>
                 </div>
 
-                <section class="content-description">
+                <section class="content-description"> <!--Блок описания типа инструмента-->
                         <h2 class="content-description-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
                         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
@@ -232,7 +266,7 @@
 
         </main>
 
-        <footer class="main-footer">
+        <footer class="main-footer"> <!--Подвал сайта-->
                         <a class="main-footer-link" href="index.html"><img class="main-footer-logo logo" src="img/logo-footer.png" width="220" height="68" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
                         <address class="main-footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                                         <a class="footer-address-link" href="tel:+7812550555">+7(812) 555-05-55</a></address>
