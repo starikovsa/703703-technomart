@@ -215,7 +215,7 @@
                     <p class="header-services-description">Хороший интернет-магазин отличается от плохого не только ценами!
                         Мы стараемся изо всех сил, чтобы сделать ваши покупки прятными.
                     </p>
-                </div>
+                </header>
 
                 <div class="services-block">
                     <ul class="services-list">
@@ -299,10 +299,10 @@
 
         <section class="modal-feedback"> <!--форма обратной связи-->
           <h2 class="visually-hidden">Форма обратной связи</h2>
-
+          <header class="modal-feedback-header">
           <form class="modal-feedback-form modal" action="https://echo.htmlacademy.ru" method="POST">
             <p class="modal-feedback-name">
-              <label class="modal-feedback-label-name" for="user-name">Ваше имя:</label>
+              <label class="modal-feedback-label modal-feedback-label-name" for="user-name">Ваше имя:</label>
               <input class="modal-feedback-user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
 
@@ -310,9 +310,10 @@
                 <label class="modal-feedback-label-email" for="user-email">Ваш e-mail:</label>
                 <input class="modal-feedback-user-email" id="user-email" type="text" name="e-mail" placeholder="email@example.com">
             </p>
+            </header>
 
             <p class="modal-feedback-textform">
-                <label class="modal-feedback-label-textform" for="user-textform">Текст письма:</label>
+                <label class="modal-feedback-label modal-feedback-label-textform" for="user-textform">Текст письма:</label>
                 <textarea class="modal-feedback-user-textform" id="user-textform" type="text" name="textform" placeholder="В свободной форме"></textarea>
             </p>
             <button class="modal-feedback-button" type="submit">Отправить</button>
@@ -326,11 +327,20 @@
           <button class="modal-close" type="submit">Закрыть</button>
         </section>
 
+        <section class="modal-cart modal"> <!--Форма добавления товара в корзину-->
+            <h2 class="visually-hidden">Добавление товара в корзину</h2>
 
+            <header class="modal-cart-header">
+              <p>Товар добавлен в Корзину!</p>
+            </header>
 
+            <div class="modal-cart-block-button">
+              <a class="modal-cart-button modal-cart-checkout" href="checkout.html">Оформить заказ</a>
+              <button class="modal-cart-button modal-cart-continue" type="submit">Продолжить покупки</button>
+            </div>
 
-
-
+            <button class="modal-close" type="submit">Закрыть</button>
+          </section>
 
     </body>
 </html>

@@ -8,7 +8,12 @@
                 <header class="inner-header">
                         <div class="inner-header-top">
                         <a class="inner-header-logo logo" href="index.html"><img class="logo-img" src="img/logo.png" width="220" height="47" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
-                        <span class="inner-header-search">Поиск</span>
+
+                        <form class="main-header-search">
+                            <label class="header-search-icon" for="header-search">Поиск</label> <!--тут будет иконка поиска-->
+                            <input class="header-search-input" id="header-search" type="search" name="search" placeholder="Поиск:">
+                        </form>
+
                                 <ul class="inner-header-cart cart-block">
                                         <li class="inner-header-list"><a class="inner-header-link" href="bookmarks.html">Закладки</a></li>
                                         <li class="inner-header-list"><a class="inner-header-link" href="cart.html">Корзина:10</a></li>
@@ -266,6 +271,21 @@
                         <p class="main-footer-developed">Разработано -
                         <a class="footer-developed-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
                     </footer>
+
+                    <section class="modal-cart modal"> <!--Форма добавления товара в корзину-->
+                      <h2 class="visually-hidden">Добавление товара в корзину</h2>
+
+                      <header class="modal-cart-header">
+                        <p>Товар добавлен в Корзину!</p>
+                      </header>
+
+                      <div class="modal-cart-block-button">
+                        <a class="modal-cart-button modal-cart-checkout" href="checkout.html">Оформить заказ</a>
+                        <button class="modal-cart-button modal-cart-continue" type="submit">Продолжить покупки</button>
+                      </div>
+
+                      <button class="modal-close" type="submit">Закрыть</button>
+                    </section>
 
     </body>
 </html>
