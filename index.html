@@ -297,10 +297,10 @@
             <a class="footer-developed-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
         </footer>
 
-        <section class="modal-feedback">
+        <section class="modal-feedback"> <!--форма обратной связи-->
           <h2 class="visually-hidden">Форма обратной связи</h2>
 
-          <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="modal-feedback-form modal" action="https://echo.htmlacademy.ru" method="POST">
             <p class="modal-feedback-name">
               <label class="modal-feedback-label-name" for="user-name">Ваше имя:</label>
               <input class="modal-feedback-user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
@@ -317,9 +317,13 @@
             </p>
             <button class="modal-feedback-button" type="submit">Отправить</button>
           </form>
+          <button class="modal-close" type="submit">Закрыть</button>
+        </section>
 
-
-
+        <section class="modal-map modal"> <!--Полная карта-->
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <img src="img/map-popup.jpg" width="940" height="446" alt="Наш адрес ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <button class="modal-close" type="submit">Закрыть</button>
         </section>
 
 
