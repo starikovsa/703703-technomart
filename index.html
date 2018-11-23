@@ -8,7 +8,12 @@
         <header class="main-header">
             <div class="main-header-top">
             <a class="main-header-logo logo"><img class="logo-img" src="img/logo.png" width="220" height="47" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
-            <span class="main-header-search">Поиск</span>
+
+            <form class="main-header-search">
+                <label class="header-search-icon" for="header-search">Поиск</label> <!--тут будет иконка поиска-->
+                <input class="header-search-input" id="header-search" type="search" name="search" placeholder="Поиск:">
+            </form>
+
             <ul class="main-header-cart cart-block">
                     <li class="main-header-list"><a class="main-header-link" href="bookmarks.html">Закладки</a></li>
                     <li class="main-header-list"><a class="main-header-link" href="cart.html">Корзина</a></li>
@@ -291,5 +296,37 @@
             <p class="main-footer-developed">Разработано -
             <a class="footer-developed-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
         </footer>
+
+        <section class="modal-feedback">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+
+          <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="modal-feedback-name">
+              <label class="modal-feedback-label-name" for="user-name">Ваше имя:</label>
+              <input class="modal-feedback-user-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+
+            <p class="modal-feedback-email">
+                <label class="modal-feedback-label-email" for="user-email">Ваш e-mail:</label>
+                <input class="modal-feedback-user-email" id="user-email" type="text" name="e-mail" placeholder="email@example.com">
+            </p>
+
+            <p class="modal-feedback-textform">
+                <label class="modal-feedback-label-textform" for="user-textform">Текст письма:</label>
+                <textarea class="modal-feedback-user-textform" id="user-textform" type="text" name="textform" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="modal-feedback-button" type="submit">Отправить</button>
+          </form>
+
+
+
+        </section>
+
+
+
+
+
+
+
     </body>
 </html>
