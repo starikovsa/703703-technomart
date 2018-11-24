@@ -25,10 +25,8 @@
                 <p class="inner-header-title">Интернет-магазин<span class="visually-hidden">«ТЕХНОМАРТ»</span> строительных материалов и инструментов для ремнота</p>
 
                 <address class="inner-header-contact">
-                                <p>
-                                <span class="header-contact-phone"><img src="img/icon-phone.svg"><a class="header-contact-link" href="tel:+7812550555">+7(812) 555-05-55</a></span>
-                                <span class="header-contact-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                                </p>
+                    <p class="header-contact-phone"><img src="img/icon-phone.svg"><a class="header-contact-link" href="tel:+7812550555">+7(812) 555-05-55</a></p>
+                    <p class="header-contact-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </address>
                 </div>
 
@@ -63,16 +61,36 @@
 
                 <section class="content-filters"> <!--Блок фильтры-->
                   <h2 class="visually-hidden">Фильтр товаров</h2>
-                  <header>
+
                         <h2 class="content-filters-title">Фильтр:</h2>
-                        <h2 class="filters-title-price">Цена:</h2>
-                        <!-- Здесь будет форма -->
+
                         <span class="content-filters-price">0-30000</span>
-                  </header>
+
 
                   <form class="content-filters-form" method="get" action="https://echo.htmlacademy.ru">
+
+                    <fieldset class="filters-price">
+                      <legend class="price-title">Цена:</legend>
+
+                      <div class="filtres-price-slider"> <!--Ползунок выбора диапазона цены-->
+                        <div class="price-slider-line"> <!--Линия ползунка-->
+                          <div class="slider-line-active"></div> <!--Линия между ползунками выбранного диапазона-->
+                          <div class="slider-line-badge slider-line-bage-left"></div> <!--Левый ползунок-->
+                          <div class="slider-line-badge slider-line-bage-left"></div> <!--Правый ползунок-->
+                        </div>
+                      </div>
+
+                      <div class="filtres-price-cost"> <!--Блок цены "от" и "до"-->
+                        <label class="visually-hidden" for="costmin">от</label>
+                        <input class="price-cost-min" id="costmin" value="0">
+                        <label class="visually-hidden price-cost-separator">-</label>
+                        <input class="price-cost-max" id="costmax" value="30000">
+                      </div>
+                    </fieldset>
+
+
                   <fieldset class="filters-manufacturers">
-                        <legend class="content-manufacturers-title">ПРОИЗВОДИТЕЛИ:</legend>
+                        <legend class="manufacturers-title">ПРОИЗВОДИТЕЛИ:</legend>
                         <ul class="filters-manufactures-list">
                           <li class="manufactures-list-option">
                             <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
@@ -101,7 +119,7 @@
                   </fieldset>
 
                   <fieldset class="filters-power">
-                        <legend class="filtres-power-title">Питание:</legend>
+                        <legend class="power-title">Питание:</legend>
                         <ul class="filtres-power-list">
                           <li class="power-list-option">
                             <input class="visually-hidden power-input power-input-radio" type="radio" name="battery" value="battery" id="battery" checked>
