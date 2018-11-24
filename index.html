@@ -25,10 +25,8 @@
             <h1 class="main-header-title">Интернет-магазин<span class="visually-hidden">«ТЕХНОМАРТ»</span> строительных материалов и инструментов для ремнота</h1>
 
             <address class="main-header-contact">
-                    <p>
-                    <span class="header-contact-phone"><img src="img/icon-phone.svg"><a class="header-contact-link" href="tel:+7812550555">+7(812) 555-05-55</a></span>
-                    <span class="header-contact-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                    </p>
+                <p class="header-contact-phone"><img src="img/icon-phone.svg"><a class="header-contact-link" href="tel:+7812550555">+7(812) 555-05-55</a></p>
+                <p class="header-contact-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </address>
 
             <ul class="main-header-user">
@@ -65,9 +63,15 @@
                                         <li class="promo-list-slider">
                                                 <div class="promo-slider"><h3 class="slider-title">ДРЕЛИ Соседям не радость!</h3></div> <!--Здесь будет слайдер-->
                                                 <img src="img/slider.jpg" width="620" height="266">
-                                                <span><</span>
-                                                <span>></span>
                                                 <a class="promo-list-link" href="catalog.html">Открыть каталог</a>
+
+                                                <button class="promo-slider-left" type="button">&lt;</button>
+                                                <button class="promo-slider-right" type="button">&gt;</button>
+
+                                                <div class="promo-slider-page"> <!--Переключение страниц внизу слайдера-->
+                                                    <button class="slider-page1" type="button">1</button>
+                                                    <button class="slider-page2" type="button">2</button>
+                                                </div>
                                         </li>
                                 </ul>
                         </div>
@@ -93,7 +97,7 @@
                 <section class="popular">
                     <header class="header-popular">
                             <h2 class="header-popular-title">Популярные товары:</h2>
-                            <a class="header-popular-link" href="popular.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+                            <a class="header-popular-link main-button" href="popular.html">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                     </header>
 
                     <ul class="popular-list">
@@ -105,9 +109,12 @@
                                                 </h3>
                                                 <img class="card-image" src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
                                                 <del class="card-price-old">32500 Р.</del>
-                                                <p class="card-price">25500 Р.</p>
-                                                <a class="card-price-button card-price-buy" href="cart.html">Купить</a>
-                                                <a class="card-price-buttom card-price-inbookmarks" href="bookmarks.hrml">В закладки</a>
+                                                <a class="card-price" href="cart.html">25500 Р.</a>
+
+                                                <div class="card-button-block">
+                                                  <button class="card-price-button card-price-buy" type="button">Купить</button>
+                                                  <button class="card-price-button card-price-inbookmarks" type="button">В закладки</button>
+                                                </div>
                                         </article>
                             </li>
 
@@ -119,9 +126,12 @@
                                                 </h3>
                                                 <img class="card-image" src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                                                 <del class="card-price-old">22500 Р.</del>
-                                                <p class="card-price">15500 Р.</p>
-                                                <a class="card-price-button card-price-buy" href="cart.html">Купить</a>
-                                                <a class="card-price-buttom card-price-inbookmarks" href="bookmarks.hrml">В закладки</a>
+                                                <a class="card-price" href="cart.html">15500 Р.</a>
+
+                                                <div class="card-button-block">
+                                                  <button class="card-price-button card-price-buy" type="button">Купить</button>
+                                                  <button class="card-price-button card-price-inbookmarks" type="button">В закладки</button>
+                                                </div>
                                     </article>
                             </li>
 
@@ -133,9 +143,12 @@
                                                 </h3>
                                                 <img class="card-image" src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                                                 <del class="card-price-old">30500 Р.</del>
-                                                <p class="card-price">25500 Р.</p>
-                                                <a class="card-price-button card-price-buy" href="cart.html">Купить</a>
-                                                <a class="card-price-buttom card-price-inbookmarks" href="bookmarks.hrml">В закладки</a>
+                                                <a class="card-price" href="cart.html">25500 Р.</a>
+
+                                                <div class="card-button-block">
+                                                  <button class="card-price-button card-price-buy" type="button">Купить</button>
+                                                  <button class="card-price-button card-price-inbookmarks" type="button">В закладки</button>
+                                                </div>
                                     </article>
                             </li>
 
@@ -146,9 +159,12 @@
                                                         BFG 2000
                                                 </h3>
                                                 <img class="card-image image" src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-                                                <p class="card-price">12500 Р.</p>
-                                                <a class="card-price-button card-price-buy" href="cart.html">Купить</a>
-                                                <a class="card-price-buttom card-price-inbookmarks" href="bookmarks.hrml">В закладки</a>
+                                                <a class="card-price" href="cart.html">12500 Р.</a>
+
+                                                <div class="card-button-block">
+                                                  <button class="card-price-button card-price-buy" type="button">Купить</button>
+                                                  <button class="card-price-button card-price-inbookmarks" type="button">В закладки</button>
+                                                </div>
                                     </article>
                             </li>
                     </ul>
@@ -157,7 +173,7 @@
         <section class="brands">
                 <header class="header-brands">
                         <h2 class="header-brands-title">Популярные производители:</h2>
-                        <a class="header-brands-link" href="brands.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+                        <a class="header-brands-link main-button" href="brands.html">ВСЕ ПРОИЗВОДИТЕЛИ</a>
                 </header>
 
                 <ul class="brands-list">
@@ -246,7 +262,7 @@
                         <li class="main-company-list">Автотрейдинг</li>
                         <li class="main-company-list">ЖэлДорЭксаедиция</li>
                 </ul>
-                <a class="main-company-link button" href="company.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
+                <a class="main-company-link main-button" href="company.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
             </section>
 
             <section class="content-contacts">
@@ -255,7 +271,7 @@
                   заехав в наш офис:
                 </p>
                 <img class="content-contacts-map" src="img/map.jpg" width="300" height="158" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-                <a class="content-map-link button" href="mailto:mail@htmlacademy.ru">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+                <button class="content-map-button main-button" type="button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button> <!--Вызывает окно обратной связи-->
             </section>
         </main>
 
@@ -321,13 +337,13 @@
             </p>
             <button class="modal-feedback-button" type="submit">Отправить</button>
           </form>
-          <button class="modal-close" type="submit">Закрыть</button>
+          <button class="modal-close" type="button">Закрыть</button>
         </section>
 
         <section class="modal-map modal"> <!--Полная карта-->
           <h2 class="visually-hidden">Наш адрес</h2>
           <img src="img/map-popup.jpg" width="940" height="446" alt="Наш адрес ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <button class="modal-close" type="submit">Закрыть</button>
+          <button class="modal-close" type="button">Закрыть</button>
         </section>
 
         <section class="modal-cart modal"> <!--Форма добавления товара в корзину-->
@@ -339,10 +355,10 @@
 
             <div class="modal-cart-block-button">
               <a class="modal-cart-button modal-cart-checkout" href="checkout.html">Оформить заказ</a>
-              <button class="modal-cart-button modal-cart-continue" type="submit">Продолжить покупки</button>
+              <button class="modal-cart-button modal-cart-continue" type="button">Продолжить покупки</button>
             </div>
 
-            <button class="modal-close" type="submit">Закрыть</button>
+            <button class="modal-close" type="button">Закрыть</button>
           </section>
 
     </body>
