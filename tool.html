@@ -51,7 +51,7 @@
 
         <main class="content">
                 <ul class="content-breadcrumbs">
-                        <li class="content-breadcrumbs-list"><a class="content-breadcrumbs-link content-breadcrumbs-home" href="index.html"><img src="img/icon-home.svg"></a></li>
+                        <li class="content-breadcrumbs-list"><a class="content-breadcrumbs-link content-breadcrumbs-home" href="index.html"><img src="img/icon-home.svg"><span class="visually-hidden">На галвную</span></a></li>
                         <li class="content-breadcrumbs-list"><a class="content-breadcrumbs-link" href="ctalog.html">Каталог</a></li>
                         <li class="content-breadcrumbs-list"><a class="content-breadcrumbs-link" href="tool.html">Инструмент</a></li>
                         <li class="content-breadcrumbs-list breadcrumbs-current">Перфораторы</li>
@@ -70,10 +70,12 @@
                       <legend class="price-title">Цена:</legend>
 
                       <div class="filtres-price-slider"> <!--Ползунок выбора диапазона цены-->
+                        <span class="visually-hidden">Ползунок для выбора диапозона цены</span>
                         <div class="price-slider-line"> <!--Линия ползунка-->
+                          <span class="visually-hidden">Линия ползунка</span>
                           <div class="slider-line-active"></div> <!--Линия между ползунками выбранного диапазона-->
-                          <div class="slider-line-badge slider-line-bage-left"></div> <!--Левый ползунок-->
-                          <div class="slider-line-badge slider-line-bage-left"></div> <!--Правый ползунок-->
+                          <div class="slider-line-badge slider-line-bage-left"><span class="visually-hidden">Левый ползунок</span></div> <!--Левый ползунок-->
+                          <div class="slider-line-badge slider-line-bage-left"><span class="visually-hidden">Правый ползунок</span></div> <!--Правый ползунок-->
                         </div>
                       </div>
 
@@ -87,7 +89,7 @@
 
 
                   <fieldset class="filters-manufacturers">
-                        <legend class="manufacturers-title">ПРОИЗВОДИТЕЛИ:</legend>
+                        <legend class="manufacturers-title">Производители:</legend>
                         <ul class="filters-manufactures-list">
                           <li class="manufactures-list-option">
                             <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
@@ -120,16 +122,16 @@
                         <ul class="filtres-power-list">
                           <li class="power-list-option">
                             <input class="visually-hidden power-input power-input-radio" type="radio" name="battery" value="battery" id="battery" checked>
-                            <label for="battery">АККУМУЛЯТОРНЫЕ</label>
+                            <label for="battery">Аккумуляторные</label>
                           </li>
 
                           <li class="power-list-option">
                             <input class="visually-hidden power-input power-input-radio" type="radio" name="battery" value="mains-battery" id="mains-battery">
-                            <label for="mains-battery">СЕТЕВЫЕ</label>
+                            <label for="mains-battery">Сетевые</label>
                           </li>
                         </ul>
                   </fieldset>
-                    <button class="filters-form-button" type="submit">Показать</button>
+                    <button class="filters-form-button" type="submit" tabindex="0">Показать</button>
                   </form>
                 </section>
 
@@ -137,11 +139,11 @@
                         <h2 class="content-sorting-title">Сортировка:</h2>
 
                         <ul class="content-sorting-list">
-                                <li class="sorting-list-price"><button class="sorting-list-button sorting-list-button-active" type="button">ПО ЦЕНЕ</button></li>
-                                <li class="sorting-list-type"><button class="sorting-list-button" type="button">ПО ТИПУ</button></li>
-                                <li class="sorting-list-functional"><button class="sorting-list-button" type="button">ПО ФУКЦИОНАЛУ</button></li>
-                                <li class="sorting-list-up"><button class="visually-hidden sorting-list-button-up sorting-list-button-up-active" type="button">&#8593;</button></li>
-                                <li class="sorting-list-down"><button class="visually-hidden sorting-list-button-down" type="button">&#8595;</button></li>
+                                <li class="sorting-list-price"><a class="sorting-list-button sorting-list-button-active" href="#">ПО ЦЕНЕ</a></li>
+                                <li class="sorting-list-type"><a class="sorting-list-button" href="#">ПО ТИПУ</a></li>
+                                <li class="sorting-list-functional"><a class="sorting-list-button" href="#">ПО ФУКЦИОНАЛУ</a></li>
+                                <li class="sorting-list-up"><a class="visually-hidden sorting-list-button-up sorting-list-button-up-active" href="#"><span class="visually-hidden">С верху</span>&#8593;</a></li>
+                                <li class="sorting-list-down"><a class="visually-hidden sorting-list-button-down" href="#"><span class="visually-hidden">С низу</span>&#8595;</a></li>
                         </ul>
                 </section>
 
@@ -291,7 +293,7 @@
                 </div>
 
                 <section class="content-description"> <!--Блок описания типа инструмента-->
-                        <h2 class="content-description-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+                        <h2 class="content-description-title">Пара слов о перфораторах</h2>
                         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
                 </section>
@@ -347,10 +349,10 @@
 
                       <div class="modal-cart-block-button">
                         <a class="modal-cart-button modal-cart-checkout" href="checkout.html">Оформить заказ</a>
-                        <button class="modal-cart-button modal-cart-continue" type="submit">Продолжить покупки</button>
+                        <button class="modal-cart-button modal-cart-continue" type="submit" tabindex="0">Продолжить покупки</button>
                       </div>
 
-                      <button class="modal-close" type="submit">Закрыть</button>
+                      <button class="modal-close" type="submit" tabindex="0">Закрыть</button>
                     </section>
 
     </body>
