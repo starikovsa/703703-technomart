@@ -3,21 +3,23 @@
         <head>
                 <meta charset="utf-8">
                 <title>HTML Academy: Техномарт Каталог</title>
+                <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+                <link href="css/style.css" rel="stylesheet">
         </head>
         <body>
                 <header class="inner-header"> <!--Шапка сайта-->
                         <div class="inner-header-top">
-                        <a class="inner-header-logo logo" href="index.html"><img class="logo-img" src="img/logo.png" width="220" height="47" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
+                        <a class="inner-header-logo logo" href="index.html"><img class="logo-img" src="img/logo.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
 
                         <form class="main-header-search">
                             <label class="header-search-icon" for="header-search">Поиск</label> <!--тут будет иконка поиска-->
                             <input class="header-search-input" id="header-search" type="search" name="search" placeholder="Поиск:">
                         </form>
 
-                                <ul class="inner-header-cart cart-block">
-                                        <li class="inner-header-list"><a class="inner-header-link" href="bookmarks.html">Закладки</a></li>
-                                        <li class="inner-header-list"><a class="inner-header-link" href="cart.html">Корзина:10</a></li>
-                                        <li class="inner-header-list"><a class="inner-header-link" href="checkout.html">Оформить заказ</a></li>
+                                <ul class="inner-header-list cart-block">
+                                        <li class="inner-header-item"><a class="inner-header-link inner-header-bookmarks" href="bookmarks.html">Закладки</a></li>
+                                        <li class="inner-header-item"><a class="inner-header-link inner-header-cart inner-header-cart-active" href="cart.html">Корзина:10</a></li>
+                                        <li class="inner-header-item"><a class="inner-header-link inner-header-checkout" href="checkout.html">Оформить заказ</a></li>
                                 </ul>
                         </div>
 

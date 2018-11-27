@@ -1,0 +1,100 @@
+body {
+  margin:0;
+  padding: 0;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Поле поиска и кнопки управления заказами*/
+.main-header-top,
+.inner-header-top {
+  font-size: 17px;
+  line-height: 18px;;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.main-header-logo,
+.inner-header-logo{
+  display: block;
+  background-color: #ee3643;
+
+  width: 220px;
+  height: 42px;
+}
+
+.header-search-input {
+  background-color: transparent;
+  border: 0px solid;
+  color: #ffffff;
+}
+
+.header-search-input::placeholder {
+  color: #ffffff;
+}
+
+.main-header-list,
+.inner-header-list {
+  list-style: none;
+}
+
+.main-header-link,
+.inner-header-link {
+  color: #ffffff;
+}
+
+.inner-header-cart-active{
+  background-color: #ee3643;
+}
+
+.main-header-checkout,
+.inner-header-checkout {
+  background-color: #63a63e;
+}
+
+.main-header-link:hover,
+.inner-header-link:hover {
+  background-color: #212a3a;
+}
+
+.inner-header-logo:hover,
+.inner-header-cart-active:hover{
+  background-color: #ca2c37;
+}
+
+.main-header-checkout:hover,
+.inner-header-checkout:hover{
+  background-color: #5fbb2d;
+}
+
+.inner-header-logo:active{
+  background-color: #ba2732;
+}
+
+.main-header-link:active,
+.inner-header-link:active {
+  background-color: #161d29;
+}
+
+.inner-header-logo:active,
+.inner-header-cart-active:active {
+  background-color: #ba2732;
+}
+
+.main-header-checkout:active,
+.inner-header-checkout:active{
+  background-color: #518534;
+}
+
+
+
+
