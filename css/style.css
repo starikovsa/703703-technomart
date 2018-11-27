@@ -13,11 +13,16 @@ a {
   text-decoration: none;
 }
 
-/*Поле поиска и кнопки управления заказами*/
+.visually-hidden,
+.modal {
+  display: none;
+}
+
+/*Шапка сайта поле поиска и кнопки управления заказами*/
 .main-header-top,
 .inner-header-top {
   font-size: 17px;
-  line-height: 18px;;
+  line-height: 18px;
   color: #ffffff;
 
   background-color: #293449;
@@ -95,6 +100,70 @@ a {
   background-color: #518534;
 }
 
+/*Шапка сайта контактная информация вход, регистрация*/
 
+.main-header-middle,
+.inner-header-middle {
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: #f1f5f7;
+}
+
+.main-header-title,
+.inner-header-title {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: 400;
+  color: #ee3643;
+}
+
+.header-contact-link {
+  font-size: 21px;
+  line-height: 21px;
+  font-style: normal;
+  color: #ee3643;
+}
+
+.header-contact-address {
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  color: #32425c;
+}
+
+.main-header-user,
+.inner-header-user {
+  list-style: none;
+}
+
+.header-user-list {
+  background-color: #ffffff;
+}
+
+
+.header-user-link {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.orders-link,
+.cabinet-link {
+  font-size: 16px;
+}
+
+.header-user-link:hover {
+  color: #ee3643;
+}
+
+.logged-link:hover {
+  color: #000000;
+}
+
+.header-user-link:active {
+  color: rgba(0, 0, 0, 0.3)
+}
 
 
