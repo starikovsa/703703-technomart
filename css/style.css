@@ -100,7 +100,7 @@ a {
   background-color: #518534;
 }
 
-/*Шапка сайта контактная информация вход, регистрация*/
+/*Шапка сайта контактная информация вход, регистрация, личный кабинет*/
 
 .main-header-middle,
 .inner-header-middle {
@@ -166,4 +166,25 @@ a {
   color: rgba(0, 0, 0, 0.3)
 }
 
+/*Шапка сайта меню навигации*/
 
+.header-navigation-list {
+  list-style: none;
+}
+
+.header-navigation-link {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.header-navigation-link:hover {
+  background-color: #293449;
+}
+
+.header-navigation-link:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+}
