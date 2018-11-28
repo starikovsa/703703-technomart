@@ -274,6 +274,14 @@ a {
     color: #ffd180;
 }
 
+.navigation-footer-link:hover {
+  text-decoration: underline;
+}
+
+.navigation-catalog-link:hover {
+  text-decoration: underline;
+}
+
 .navigation-footer-link:active {
   color: rgba(241, 245, 247, 0.5);
 }
@@ -318,6 +326,11 @@ a {
 .footer-contact-link,
 .footer-developed-link {
   color: #ffd180;
+}
+
+.footer-contact-link:hover,
+.footer-developed-link:hover {
+  text-decoration: underline;
 }
 
 .footer-contact-link:active,
