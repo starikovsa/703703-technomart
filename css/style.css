@@ -9,6 +9,10 @@ body {
   font-style: normal;
 }
 
+.inner-content {
+  font-family: PTSans, Arial, sans-serif;
+}
+
 .company-description,
 .company-delivery,
 .contacts-description {
@@ -321,6 +325,105 @@ a {
   color: #ee3643;
 }
 
+/*Каталог интсрументов основное содержимое*/
 
+.content-breadcrumbs-list {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
 
+  list-style: none;
+}
 
+.content-breadcrumbs-link {
+  color: #000000;
+}
+
+.inner-content-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.manufacturers-title,
+.power-title {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.manufactures-list-option,
+.power-list-option {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters-form-button {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.card-price-old,
+.card-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #999999;
+}
+
+.card-price {
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.card-price-button {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card-price-buy {
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+
+.card-price-inbookmarks {
+  color: #32425c;
+}
+
+.card-price-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.card-price-buy:active {
+  background-color: #518534;
+}
+
+.card-price-inbookmarks:active {
+  color: rgba(50, 66, 92, 0.3);
+}
