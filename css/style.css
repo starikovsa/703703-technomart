@@ -204,6 +204,99 @@ a {
   background-color: #1d2739;
 }
 
+/*Главная - основное содержимое*/
+
+.promo-list-item {
+  list-style: none;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.promo-list-material{
+  background-color: #f6b22d;
+}
+
+.promo-list-tool {
+  background-color: #3bbce3;
+}
+
+.promo-list-slider {
+  background-color: #413c3a;
+}
+
+.promo-list-mechanism {
+  background-color: #dc91d8;
+}
+
+.promo-list-discount {
+  background-color: #8ed78f;
+}
+
+.promo-list-delivery {
+  background-color: #ffc047;
+}
+
+.promo-list-link {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-list-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-list-link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.title-text {
+  font-family: PTSans, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header-popular-title,
+.header-brands-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.header-popular,
+.header-brands {
+  background-color: #f9f5f0;
+}
+
+.popular-list-item,
+.tool-list-item {
+  list-style: none;
+}
+
+.brands-list {
+  list-style: none;
+}
+
+
 /*Блок компании и карта*/
 
 .content-company-title,
@@ -391,6 +484,7 @@ a {
 }
 
 .card-title {
+  font-family: PTSans, Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
