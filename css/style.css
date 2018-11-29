@@ -304,16 +304,14 @@ a {
 
 /*Блок сервисы*/
 
-.header-services {
+.header-services-title,
+.content-description-title {
   font-family: Cuprum, Arial, sans-serif;
-  font-weight: 400;
-  color: #000000;
-}
-
-.header-services-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .delivery-description-title {
@@ -324,7 +322,8 @@ a {
 }
 
 .header-services-description,
-.delivery-description-text {
+.delivery-description-text,
+.content-description-text {
   font-family: PTSans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -510,8 +509,20 @@ a {
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
+
+  background-color: #f2f6f8;
 }
 
+.content-filters-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #f7f3ec;
+}
+
+.price-title,
 .manufacturers-title,
 .power-title {
   font-size: 17px;
@@ -519,6 +530,17 @@ a {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.filtres-price-slider,
+.price-cost-min,
+.price-cost-max {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
 }
 
 .manufactures-list-option,
@@ -539,6 +561,39 @@ a {
 
   background-color: #ffffff;
 }
+
+.content-sorting {
+  background-color: #f7f3ec;
+}
+
+.content-sorting-title,
+.sorting-item  {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.content-sorting-list {
+  list-style: none;
+}
+
+.sorting-list-button {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list-button:hover {
+  color: #000000;
+}
+
+.sorting-list-button-active,
+.sorting-list-button:active {
+  color: #ee3643;
+}
+
 
 .card-title {
   font-family: PTSans, Arial, sans-serif;
@@ -590,4 +645,26 @@ a {
 
 .card-price-inbookmarks:active {
   color: rgba(50, 66, 92, 0.3);
+}
+
+.content-pages-list {
+  list-style: none;
+}
+
+.pages-item {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.item-firs-current {
+  color: #ffffff;
+
+  background-color: #ee3643;
+}
+
+.content-description {
+  background-color: #f2f6f8;
 }
