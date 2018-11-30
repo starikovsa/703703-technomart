@@ -47,9 +47,10 @@ a {
 .inner-header-logo{
   display: block;
   background-color: #ee3643;
-
   width: 220px;
-  height: 42px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
 }
 
 .header-search-input {
@@ -59,13 +60,22 @@ a {
 }
 
 .header-search-input::placeholder {
+  font-size: 17px;
   color: #ffffff;
+}
+
+.header-search-input:focus {
+  height: 42px;
+  background-color: #ffffff;
+  font-size: 17px;
+  color: #000000;
 }
 
 .main-header-list,
 .inner-header-list {
   list-style: none;
 }
+
 
 .main-header-link,
 .inner-header-link {
@@ -185,6 +195,7 @@ a {
 
 .header-navigation-list {
   list-style: none;
+  background-color: #32425c;
 }
 
 .header-navigation-link {
@@ -192,7 +203,7 @@ a {
   line-height: 17px;
   color: #ffffff;
 
-  background-color: #32425c;
+
 }
 
 .header-navigation-link:hover {
@@ -668,3 +679,83 @@ a {
 .content-description {
   background-color: #f2f6f8;
 }
+
+
+/*Сетки*/
+/*Хедер*/
+
+.main-header {
+  width: 940px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.main-header-top {
+  width: 940px;
+  height: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.main-header-search {
+  width: 270px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.main-header-list {
+  width: 460px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main-header-item {
+  width: 150px;
+  height: 42px;
+}
+
+.main-header-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header-title {
+  width: 300px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.main-header-contact {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.main-header-user {
+  width: 300px;
+}
+
+.header-navigation-list {
+  width: 940px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+
+
+/*Блок о компании и карта*/
+
