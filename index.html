@@ -8,6 +8,7 @@
     </head>
     <body>
         <header class="main-header"> <!--Шапка сайта-->
+          <div class="header-wrapper">
             <div class="main-header-top">
             <a class="main-header-logo logo"><img class="logo-img" src="img/logo.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
 
@@ -17,12 +18,14 @@
             </form>
 
             <ul class="main-header-list cart-block">
-                    <li class="main-header-item"><a class="main-header-link main-header-bookmarks" href="bookmarks.html">Закладки</a></li>
-                    <li class="main-header-item"><a class="main-header-link main-header-cart" href="cart.html">Корзина</a></li>
+                    <li class="main-header-item"><a class="main-header-link main-header-bookmarks" href="bookmarks.html">Закладки: 0</a></li>
+                    <li class="main-header-item"><a class="main-header-link main-header-cart" href="cart.html">Корзина: 0</a></li>
                     <li class="main-header-item main-header-item-checkout"><a class="main-header-link main-header-checkout" href="checkout.html">Оформить заказ</a></li>
             </ul>
             </div>
+          </div>
 
+          <div class="header-wrapper-middle">
             <div class="main-header-middle">
             <h1 class="main-header-title"><span class="visually-hidden">«ТЕХНОМАРТ»</span>Интернет-магазин строительных материалов и инструментов для ремнота</h1>
 
@@ -32,7 +35,7 @@
             </address>
 
             <ul class="main-header-user">
-                    <li class="header-user-list login"><a class="header-user-link" href="login.html"><img src="img/icon-login.svg">Войти</a></li>
+                    <li class="header-user-list login"><a class="header-user-link" href="login.html">Войти</a></li>
                     <li class="header-user-list registry"><a class="header-user-link" href="registry.html">Регистрация</a></li>
             </ul>
             </div>
@@ -48,6 +51,7 @@
                             <li class="header-navigation-item"><a class="header-navigation-link" href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
+          </div>
         </header>
 
         <main class="content">
