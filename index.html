@@ -54,7 +54,7 @@
           </div>
         </header>
 
-        <main class="content">
+        <main class="content container">
                 <section class="promo"> <!--Промо блок-->
                         <div class="promo-left">
                                 <ul class="promo-list">
@@ -250,6 +250,7 @@
                 </div>
             </section>
 
+            <div class="index-columns">
             <section class="content-company"> <!--Блок описания компании-->
                 <h2 class="content-company-title">Компания «ТЕХНОМАРТ»</h2>
                 <p class="company-description"> Настоящий мужской шоппинг начинается здесь! Огромный выбор товарова для ремонта и
@@ -274,12 +275,17 @@
                 <img class="content-contacts-map" src="img/map.jpg" width="300" height="158" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
                 <a class="content-map-link main-button" href="mailto:mail@htmlacademy.ru">Заблудились? Напишите нам!</a> <!--Вызывает окно обратной связи-->
             </section>
+            </div>
         </main>
 
         <footer class="main-footer"> <!--Подвал сайта-->
-            <a class="main-footer-link"><img class="main-footer-logo logo" src="img/logo.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
-            <address class="main-footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a class="footer-address-link" href="tel:+7812550555">+7(812) 555-05-55</a></address>
+          <div class="footer-wrapper">
+            <div class="container-footer-top">
+              <div class="footer-logo-address">
+                <a class="main-footer-logo logo"><img class="logo-img" src="img/logo-footer.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
+                <address class="main-footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <a class="footer-address-link" href="tel:+7812550555">+7(812) 555-05-55</a></address>
+              </div>
 
             <nav class="main-navigation-footer">
                     <ul class="navigation-footer-list">
@@ -296,9 +302,11 @@
                         <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="tool.html">Инструмет</a></li>
                         <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="specialoffers.html">Спецпредложения</a></li>
                 </ul>
-
             </nav>
+            </div>
+          </div>
 
+          <div class="footer-wrapper-bot">
             <div class="footer-bottom">
             <p class="main-footer-copyright">	&copy;2010-2018 Компания «Техномарт»
               Все права защищены</p>
@@ -317,6 +325,7 @@
             <p class="main-footer-developed">Разработано -
             <a class="footer-developed-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
             </div>
+          </div>
         </footer>
 
         <section class="modal-feedback modal"> <!--форма обратной связи-->
