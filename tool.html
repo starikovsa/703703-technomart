@@ -8,21 +8,24 @@
         </head>
         <body>
                 <header class="inner-header"> <!--Шапка сайта-->
+                    <div class="header-wrapper">
                         <div class="inner-header-top">
                         <a class="inner-header-logo logo" href="index.html"><img class="logo-img" src="img/logo.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
 
                         <form class="main-header-search">
-                            <label class="header-search-icon" for="header-search">Поиск</label> <!--тут будет иконка поиска-->
+                            <label class="header-search-icon" for="header-search"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg></label> <!--тут будет иконка поиска-->
                             <input class="header-search-input" id="header-search" type="search" name="search" placeholder="Поиск:">
                         </form>
 
                                 <ul class="inner-header-list cart-block">
-                                        <li class="inner-header-item"><a class="inner-header-link inner-header-bookmarks" href="bookmarks.html">Закладки</a></li>
+                                        <li class="inner-header-item"><a class="inner-header-link inner-header-bookmarks" href="bookmarks.html">Закладки: 0</a></li>
                                         <li class="inner-header-item"><a class="inner-header-link inner-header-cart inner-header-cart-active" href="cart.html">Корзина:10</a></li>
                                         <li class="inner-header-item inner-header-item-checkout"><a class="inner-header-link inner-header-checkout" href="checkout.html">Оформить заказ</a></li>
                                 </ul>
                         </div>
+                  </div>
 
+                  <div class="header-wrapper-middle">
                 <div class="inner-header-middle">
                 <p class="inner-header-title"><span class="visually-hidden">«ТЕХНОМАРТ»</span>Интернет-магазин строительных материалов и инструментов для ремнота</p>
 
@@ -39,19 +42,20 @@
                 </div>
 
                 <nav class="inner-header-navigation">
-                                <ul>
-                                        <li class="header-navigation-list"><a class="header-navigation-link" href="index.html">Главная</a></li>
-                                        <li class="header-navigation-list"><a class="header-navigation-link" href="company.html">Компания</a></li>
-                                        <li class="header-navigation-list"><a class="header-navigation-link" href="catalog.html">Каталог</a></li>
-                                        <li class="header-navigation-list"><a class="header-navigation-link" href="news.html">Новости</a></li>
-                                        <li class="header-navigation-list"><a class="header-navigation-link" href="specialoffers.html">Спецпредложения</a></li>
-                                        <li class="header-navigation-list"><a class="header-navigation-link" href="delivery.html">Доставка</a></li>
-                                        <li class="header-navigation-list"><a class="header-navigation-link" href="contact.html">Контакты</a></li>
+                                <ul class="header-navigation-list">
+                                        <li class="header-navigation-item"><a class="header-navigation-link" href="index.html">Главная</a></li>
+                                        <li class="header-navigation-item"><a class="header-navigation-link" href="company.html">Компания</a></li>
+                                        <li class="header-navigation-item"><a class="header-navigation-link" href="catalog.html">Каталог</a></li>
+                                        <li class="header-navigation-item"><a class="header-navigation-link" href="news.html">Новости</a></li>
+                                        <li class="header-navigation-item"><a class="header-navigation-link" href="specialoffers.html">Спецпредложения</a></li>
+                                        <li class="header-navigation-item"><a class="header-navigation-link" href="delivery.html">Доставка</a></li>
+                                        <li class="header-navigation-item"><a class="header-navigation-link" href="contact.html">Контакты</a></li>
                             </ul>
                 </nav>
+                </div>
         </header>
 
-        <main class="inner-content">
+        <main class="inner-content container">
                 <ul class="content-breadcrumbs-list">
                         <li class="content-breadcrumbs-item"><a class="content-breadcrumbs-link content-breadcrumbs-home" href="index.html"><img src="img/icon-home.svg"><span class="visually-hidden">На галвную</span></a></li>
                         <li class="content-breadcrumbs-item"><a class="content-breadcrumbs-link" href="ctalog.html">Каталог</a></li>
@@ -61,6 +65,8 @@
 
                 <h1 class="inner-content-title">Перфораторы</h1>
 
+            <div class="wrapper-filters-tool">
+              <div class="wrapper-filters">
                 <section class="content-filters"> <!--Блок фильтры-->
                   <h2 class="visually-hidden">Фильтр товаров</h2>
 
@@ -136,7 +142,9 @@
                     <button class="filters-form-button" type="submit" tabindex="0">Показать</button>
                   </form>
                 </section>
+              </div>
 
+              <div class="wrapper-sorting-tool">
                 <section class="content-sorting"> <!--Блок сортировка-->
                         <h2 class="content-sorting-title">Сортировка:</h2>
 
@@ -284,6 +292,8 @@
                     </li>
                         </ul>
                 </section>
+                </div>
+            </div>
 
                 <div class="content-pages"> <!--Блок нумерации страниц-->
                                 <ul class="content-pages-list">
@@ -303,47 +313,56 @@
         </main>
 
         <footer class="main-footer"> <!--Подвал сайта-->
-                        <a class="main-footer-link" href="index.html"><img class="main-footer-logo logo" src="img/logo.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
-                        <address class="main-footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                                        <a class="footer-address-link" href="tel:+7812550555">+7(812) 555-05-55</a></address>
+          <div class="footer-wrapper">
+            <div class="container-footer-top">
+              <div class="footer-logo-address">
+                <a class="main-footer-logo logo"><img class="logo-img" src="img/logo-footer.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
+                <address class="main-footer-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                <a class="footer-address-link" href="tel:+7812550555">+7(812) 555-05-55</a></address>
+              </div>
 
-                        <nav class="main-navigation-footer">
-                                <ul class="navigation-footer-list">
-                                        <li class="navigation-footer-item"><a class="navigation-footer-link" href="company.html">Компания</a></li>
-                                        <li class="navigation-footer-item"><a class="navigation-footer-link" href="news.html">Новости</a></li>
-                                        <li class="navigation-footer-item"><a class="navigation-footer-link" href="catalog.html">Каталог</a></li>
-                                        <li class="navigation-footer-item"><a class="navigation-footer-link" href="delivery.html">Доставка</a></li>
-                                        <li class="navigation-footer-item"><a class="navigation-footer-link" href="contact.html">Контакты</a></li>
-                            </ul>
+            <nav class="main-navigation-footer">
+                    <ul class="navigation-footer-list">
+                            <li class="navigation-footer-item"><a class="navigation-footer-link" href="company.html">Компания</a></li>
+                            <li class="navigation-footer-item"><a class="navigation-footer-link" href="news.html">Новости</a></li>
+                            <li class="navigation-footer-item"><a class="navigation-footer-link" href="tool.html">Каталог</a></li>
+                            <li class="navigation-footer-item"><a class="navigation-footer-link" href="delivery.html">Доставка</a></li>
+                            <li class="navigation-footer-item"><a class="navigation-footer-link" href="contact.html">Контакты</a></li>
+                </ul>
 
-                            <ul class="navigation-catalog-list">
-                                    <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="material.html">Материалы</a></li>
-                                    <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="mechanism.html">Техника</a></li>
-                                    <li class="navigation-catalog-item"><a class="navigation-catalog-link-current" href="tool.html">Инструмет</a></li>
-                                    <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="specialoffers.html">Спецпредложения</a></li>
-                            </ul>
+                <ul class="navigation-catalog-list">
+                        <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="material.html">Материалы</a></li>
+                        <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="mechanism.html">Техника</a></li>
+                        <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="tool.html">Инструмет</a></li>
+                        <li class="navigation-catalog-item"><a class="navigation-catalog-link" href="specialoffers.html">Спецпредложения</a></li>
+                </ul>
+            </nav>
+            </div>
+          </div>
 
-                        </nav>
+          <div class="footer-wrapper-bot">
+            <div class="footer-bottom">
+            <p class="main-footer-copyright">	&copy;2010-2018 Компания «Техномарт»
+              Все права защищены</p>
 
-                        <div class="footer-bottom">
-                        <p class="main-footer-copyright">	&copy;2010-2018 Компания «Техномарт»
-                          Все права защищены</p>
+            <div class="main-footer-social">
+                    <ul class="footer-social-list">
+                            <li class="footer-social-item"><a class="footer-social-link" href="vk.com">Вконтакте</a></li>
+                            <li class="footer-social-item"><a class="footer-social-link" href="fb.com">Фейсбук</a></li>
+                            <li class="footer-social-item"><a class="footer-social-link" href="instagram.com">Инстаграм</a></li>
+                    </ul>
+            </div>
 
-                        <div class="main-footer-social">
-                                <ul class="footer-social-list">
-                                        <li class="footer-social-item"><a class="footer-social-link" href="vk.com">Вконтакте</a></li>
-                                        <li class="footer-social-item"><a class="footer-social-link" href="fb.com">Фейсбук</a></li>
-                                        <li class="footer-social-item"><a class="footer-social-link" href="instagram.com">Инстаграм</a></li>
-                                </ul>
-                        </div>
+            <div class="wrapper-contact-developed">
+            <p class="main-footer-contact">Обратная связь:
+                <a class="footer-contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 
-                        <p class="main-footer-contact">Обратная связь:
-                            <a class="footer-contact-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-
-                        <p class="main-footer-developed">Разработано -
-                        <a class="footer-developed-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
-                        </div>
-                    </footer>
+            <p class="main-footer-developed">Разработано -
+            <a class="footer-developed-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
+            </div>
+            </div>
+          </div>
+        </footer>
 
                     <section class="modal-cart modal"> <!--Форма добавления товара в корзину-->
                       <h2 class="visually-hidden">Добавление товара в корзину</h2>
