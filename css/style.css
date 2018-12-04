@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700,700i&subset=cyrillic');
+
 body {
   margin:0;
   padding: 0;
@@ -824,6 +826,7 @@ a {
   padding: 0px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .main-header-item,
@@ -864,6 +867,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   box-shadow: inset 0 -5px 0 #293449;
 }
 
@@ -940,6 +944,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .navigation-catalog-list {
@@ -951,12 +956,14 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-footer-social {
