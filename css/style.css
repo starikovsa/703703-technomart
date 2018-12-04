@@ -56,7 +56,7 @@ a {
   display: block;
   background-color: #ee3643;
   width: 220px;
-  height: 47px;
+  min-height: 47px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 
 }
@@ -73,7 +73,7 @@ a {
 }
 
 .header-search-input:focus {
-  height: 42px;
+  min-height: 42px;
   background-color: #ffffff;
   font-size: 17px;
   color: #000000;
@@ -87,7 +87,7 @@ a {
 
 .main-header-link,
 .inner-header-link {
-  height: 42px;
+  min-height: 42px;
   display: block;
   color: #ffffff;
 }
@@ -174,7 +174,7 @@ a {
 
 .header-contact-phone {
   width: 270px;
-  height: 45px;
+  min-height: 45px;
   margin: 0;
   position: relative;
   border: 3px solid #ffffff;
@@ -492,7 +492,7 @@ a {
   display: block;
   background-color: #ee3643;
   width: 220px;
-  height: 68px;
+  min-height: 68px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -615,6 +615,7 @@ a {
 }
 
 .inner-content-title {
+  font-family: Cuprum, Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -693,6 +694,7 @@ a {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .content-sorting-list {
@@ -797,7 +799,7 @@ a {
 .main-header-top,
 .inner-header-top {
   width: 940px;
-  height: 42px;
+  min-height: 42px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -807,7 +809,7 @@ a {
 
 .main-header-search {
   width: 270px;
-  height: 42px;
+  min-height: 42px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -826,7 +828,7 @@ a {
 .main-header-item,
 .inner-header-item {
   width: 150px;
-  height: 42px;
+  min-height: 42px;
   position: relative;
   text-align: center;
 }
@@ -854,7 +856,7 @@ a {
 
 .header-navigation-list {
   width: 940px;
-  height: 60px;
+  min-height: 60px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -992,7 +994,7 @@ a {
 
 .content-sorting {
   width: 700px;
-  height: 38px;
+  min-height: 38px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
