@@ -56,8 +56,9 @@ a {
   display: block;
   background-color: #ee3643;
   width: 220px;
-  min-height: 47px;
+  min-height: 42px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  margin-bottom: -5px;
 
 }
 
