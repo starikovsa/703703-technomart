@@ -281,15 +281,21 @@ a {
 /*Главная - основное содержимое*/
 
 .promo-list-item {
+  width: 300px;
+  height: 123px;
   list-style: none;
 
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+
+  margin-bottom: 20px;
 }
 
+
 .promo-list-material{
+  margin-right: 20px;
   background-color: #f6b22d;
 }
 
@@ -298,7 +304,18 @@ a {
 }
 
 .promo-list-slider {
+  width: 620px;
+  height: 266px;
+
+  position: relative;
   background-color: #413c3a;
+}
+
+.promo-slider {
+  margin: 0;
+  position: absolute;
+  color: #fff;
+  padding: 0;
 }
 
 .promo-list-mechanism {
@@ -348,6 +365,9 @@ a {
 }
 
 .slider-page-list {
+  position: absolute;
+  top: 170px;
+  left: 150px;
   list-style: none;
 }
 
@@ -1030,6 +1050,18 @@ a {
   border: none;
 }
 
-.content-tool {
+.promo {
+  width: 940px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 59px;
+}
 
+.promo-left .promo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo-list {
+  padding: 0;
 }
