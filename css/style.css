@@ -12,13 +12,13 @@ body {
 }
 
 .inner-content {
-  font-family: PTSans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
 }
 
 .company-description,
 .company-delivery,
 .contacts-description {
-  font-family: PTSans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -357,7 +357,7 @@ a {
 }
 
 .title-text {
-  font-family: PTSans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -446,7 +446,7 @@ a {
 .header-services-description,
 .delivery-description-text,
 .content-description-text {
-  font-family: PTSans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -761,7 +761,7 @@ a {
 
 
 .card-title {
-  font-family: PTSans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
