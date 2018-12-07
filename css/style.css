@@ -527,6 +527,11 @@ input[type="radio"].visually-hidden {
   background-color: #f9f5f0;
 }
 
+.content-tool {
+  width:700px;
+  margin:20px auto;
+}
+
 .content-tool-list,
 .popular-list {
   display: flex;
@@ -537,14 +542,59 @@ input[type="radio"].visually-hidden {
   list-style: none;
   justify-content: space-between;
 }
+.card-actions{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.card-actions {
+  display: none;
+}
+
+.tool-list-item:hover .card-actions {
+  display: block;
+}
+
+.flag{
+  position:absolute;
+  top:-1px;
+  right:-1px;
+  width:60px;
+  height:60px;
+  text-indent:-1000px;
+  overflow:hidden;
+   z-index:20;
+}
+.flag-new{
+  background:url("../img/new-flag.png") no-repeat 0 0;
+}
 
 .popular-list-item,
 .tool-list-item {
-  list-style: none;
-  width: 200px;
-  height: 318px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  position:relative;
+  display:inline-block;
+  width:218px;
+  margin-right:20px;
+  margin-bottom:20px;
+  border:1px solid #ccc;
+  line-height:20px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.card-image{
+  width:218px;
+  height:168px;
+}
+
+.image-tool {
+  max-width: 100%;
 }
 
 .tool-list-item:nth-child(3n) {
@@ -552,8 +602,7 @@ input[type="radio"].visually-hidden {
 }
 
 .card {
-  width: 200px;
-  height: 318px;
+  width: 220px;
   display: flex;
   flex-direction: column;
 }
@@ -934,6 +983,10 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+  min-height:40px;
+  padding:0 25px;
+  margin-top:10px;
+  margin-bottom:15px;
 }
 
 .card-price-old,
@@ -944,10 +997,36 @@ input[type="radio"].visually-hidden {
   color: #999999;
 }
 
-.card-price {
-  color: #ffffff;
+.card-price-old {
+  min-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.card-price{
+  padding: 0;
+  margin: 0;
+}
 
-  background-color: #ee3643;
+.card-price {
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 11px 30px;
+  color: #ffffff;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.card-price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
 }
 
 .card-price-button {
@@ -958,14 +1037,31 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.card-price-buy {
-  color: #ffffff;
-
+.card-price-buy,
+.card-price-inbookmarks {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
   background-color: #63a63e;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .card-price-inbookmarks {
-  color: #32425c;
+  color:#32425c;
+  background:white;
+  border-bottom-color:#63a63e;
 }
 
 .card-price-buy:hover {
