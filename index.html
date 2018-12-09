@@ -351,7 +351,7 @@
         <section class="modal-feedback modal"> <!--форма обратной связи-->
           <h2 class="visually-hidden">Форма обратной связи</h2>
 
-          <form class="modal-feedback-form modal" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="POST">
             <header class="modal-feedback-header">
             <p class="modal-feedback-name">
               <label class="modal-feedback-label modal-feedback-label-name" for="user-name">Ваше имя:</label>
@@ -359,7 +359,7 @@
             </p>
 
             <p class="modal-feedback-email">
-                <label class="modal-feedback-label-email" for="user-email">Ваш e-mail:</label>
+                <label class="modal-feedback-label modal-feedback-label-email" for="user-email">Ваш e-mail:</label>
                 <input class="modal-feedback-user-email" id="user-email" type="text" name="e-mail" placeholder="email@example.com">
             </p>
             </header>
@@ -368,22 +368,24 @@
                 <label class="modal-feedback-label modal-feedback-label-textform" for="user-textform">Текст письма:</label>
                 <textarea class="modal-feedback-user-textform" id="user-textform" name="textform" placeholder="В свободной форме"></textarea>
             </p>
+            <footer class="modal-feedback-footer">
             <button class="modal-feedback-button" type="submit" tabindex="0">Отправить</button>
+            </footer>
           </form>
-          <button class="modal-close" type="button" tabindex="0">Закрыть</button>
+          <button class="modal-close" type="button" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
         </section>
 
         <section class="modal-map modal"> <!--Полная карта-->
           <h2 class="visually-hidden">Наш адрес</h2>
           <img src="img/map-popup.jpg" width="940" height="446" alt="Наш адрес ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <button class="modal-close" type="button" tabindex="0">Закрыть</button>
+          <button class="modal-close" type="button" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
         </section>
 
         <section class="modal-cart modal"> <!--Форма добавления товара в корзину-->
             <h2 class="visually-hidden">Добавление товара в корзину</h2>
 
             <header class="modal-cart-header">
-              <p>Товар добавлен в Корзину!</p>
+              <p class="modal-cart-title">Товар добавлен в Корзину!</p>
             </header>
 
             <div class="modal-cart-block-button">
@@ -391,7 +393,7 @@
               <button class="modal-cart-button modal-cart-continue" type="button" tabindex="0">Продолжить покупки</button>
             </div>
 
-            <button class="modal-close" type="button" tabindex="0">Закрыть</button>
+            <button class="modal-close" type="button" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
           </section>
 
     </body>
