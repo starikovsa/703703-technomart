@@ -12,8 +12,12 @@
                         <a class="inner-header-logo logo" href="index.html"><img class="logo-img" src="img/logo.png" width="110" height="18" alt="Логотип магазина «ТЕХНОМАРТ»"></a>
 
                         <form class="main-header-search">
-                          <submit class="header-search-submit"></submit> <!--тут будет иконка поиска-->
-                          <input class="header-search-input" type="text" name="search" placeholder="Поиск:">
+                            <input class="header-search-input" id="header-search" type="text" name="search" placeholder="Поиск:">
+                            <label class="header-search-label" for="header-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="header-search-icon" width="17" height="17" viewBox="0 0 17 17">
+                                  <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                              </label>  <!--тут будет иконка поиска-->
+
                         </form>
 
                                 <ul class="inner-header-list cart-block">
@@ -102,26 +106,26 @@
                         <ul class="filters-manufactures-list">
                           <li class="manufactures-list-option">
                             <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
-                            <label for="bosch">Bosch</label>
+                            <label for="bosch" class="manufactures-label">Bosch</label>
                           </li>
 
                           <li class="manufactures-list-option">
                             <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="interskol" id="interskol">
-                            <label for="interskol">Интерскол</label>
+                            <label for="interskol" class="manufactures-label">Интерскол</label>
                           </li>
 
                           <li class="manufactures-list-option">
                             <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="makita" id="makita" checked>
-                            <label for="makita">Makita</label>
+                            <label for="makita" class="manufactures-label">Makita</label>
                           </li>
                           <li class="manufactures-list-option">
                             <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
-                            <label for="dewalt">DeWalt</label>
+                            <label for="dewalt" class="manufactures-label">DeWalt</label>
                           </li>
 
                           <li class="manufactures-list-option">
                             <input class="visually-hidden manufactures-input manufactures-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
-                            <label for="hitachi">Hitachi</label>
+                            <label for="hitachi" class="manufactures-label">Hitachi</label>
                           </li>
                         </ul>
                   </fieldset>
@@ -131,12 +135,12 @@
                         <ul class="filtres-power-list">
                           <li class="power-list-option">
                             <input class="visually-hidden power-input power-input-radio" type="radio" name="battery" value="battery" id="battery" checked>
-                            <label for="battery">Аккумуляторные</label>
+                            <label for="battery" class="power-label" class="manufactures-label">Аккумуляторные</label>
                           </li>
 
                           <li class="power-list-option">
                             <input class="visually-hidden power-input power-input-radio" type="radio" name="battery" value="mains-battery" id="mains-battery">
-                            <label for="mains-battery">Сетевые</label>
+                            <label for="mains-battery" class="power-label">Сетевые</label>
                           </li>
                         </ul>
                   </fieldset>
@@ -413,7 +417,7 @@
           </div>
         </footer>
 
-                    <section class="modal-cart modal1"> <!--Форма добавления товара в корзину-->
+                    <section class="modal-cart modal"> <!--Форма добавления товара в корзину-->
                       <h2 class="visually-hidden">Добавление товара в корзину</h2>
 
                       <header class="modal-cart-header">
@@ -421,7 +425,7 @@
                       </header>
 
                       <div class="modal-cart-block-button">
-                        <a class="modal-cart-button modal-cart-checkout" href="checkout.html">Оформить заказ</a>
+                        <a class="main-button modal-cart-button modal-cart-checkout" href="checkout.html">Оформить заказ</a>
                         <button class="modal-cart-button modal-cart-continue" type="submit" tabindex="0">Продолжить покупки</button>
                       </div>
 
