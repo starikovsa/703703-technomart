@@ -432,8 +432,13 @@ input[type="radio"].visually-hidden {
 /*Главная - основное содержимое*/
 
 .promo-list-item {
-  width: 300px;
-  height: 123px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 275px;
+  min-height: 101px;
   list-style: none;
 
   font-size: 24px;
@@ -442,6 +447,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   margin-bottom: 20px;
+  padding-top: 22px;
+  padding-left: 25px;
 }
 
 
@@ -450,8 +457,36 @@ input[type="radio"].visually-hidden {
   background-color: #f6b22d;
 }
 
+.promo-list-material::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 43px;
+  width: 44px;
+  height: 65px;
+  border: none;
+  background: transparent;
+
+  background-image: url("../img/material.svg");
+  background-repeat: no-repeat;
+}
+
 .promo-list-tool {
   background-color: #3bbce3;
+}
+
+.promo-list-tool::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 28px;
+  width: 75px;
+  height: 61px;
+  border: none;
+  background: transparent;
+
+  background-image: url("../img/tool.svg");
+  background-repeat: no-repeat;
 }
 
 .promo-list-slider {
@@ -460,6 +495,7 @@ input[type="radio"].visually-hidden {
 
   position: relative;
   background-color: #413c3a;
+  padding: 0;
 }
 
 .promo-slider {
@@ -467,21 +503,72 @@ input[type="radio"].visually-hidden {
   position: absolute;
   color: #fff;
   padding: 0;
+
+  top: 20px;
+  left: 24px;
+  width: 570px;
+  padding: 0px;
+  color: #ffffff;
+  overflow: hidden;
 }
 
 .promo-list-mechanism {
   background-color: #dc91d8;
 }
 
+.promo-list-mechanism::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 31px;
+  width: 78px;
+  height: 62px;
+  border: none;
+  background: transparent;
+
+  background-image: url("../img/mechanism.svg");
+  background-repeat: no-repeat;
+}
+
 .promo-list-discount {
   background-color: #8ed78f;
+}
+
+.promo-list-discount::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 45px;
+  width: 59px;
+  height: 72px;
+  border: none;
+  background: transparent;
+
+  background-image: url("../img/discount.svg");
+  background-repeat: no-repeat;
 }
 
 .promo-list-delivery {
   background-color: #ffc047;
 }
 
+.promo-list-delivery::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  right: 31px;
+  width: 78px;
+  height: 63px;
+  border: none;
+  background: transparent;
+
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+}
+
 .promo-list-link {
+  width: 90px;
+
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -489,6 +576,13 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: rgba(0, 0, 0, 0.1);
+
+  margin-top: 13px;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-left: 23px;
+  border-radius: 3px;
 }
 
 .promo-list-link:hover {
@@ -505,6 +599,8 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .title-text {
@@ -513,6 +609,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   color: #ffffff;
+  margin: 0;
+  margin-top: 8px;
 }
 
 .slider-page-list {
@@ -570,12 +668,19 @@ input[type="radio"].visually-hidden {
   width: 218px;
   height: 88px;
   padding: 40px 0;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255, 1);
   z-index: 10;
 }
 
 .card-actions {
   display: none;
+}
+
+
+
+.tool-list-item:hover,
+.popular-list-item:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .tool-list-item:hover .card-actions,
@@ -591,10 +696,15 @@ input[type="radio"].visually-hidden {
   height:60px;
   text-indent:-1000px;
   overflow:hidden;
-   z-index:20;
+  z-index:20;
 }
 .flag-new{
   background:url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.promo-list-item .flag {
+  top: 0;
+  right: 0;
 }
 
 .popular-list-item,
@@ -1188,13 +1298,13 @@ input[type="radio"].visually-hidden {
 
 .card-price-buy,
 .card-price-inbookmarks {
+  position: relative;
   display: block;
   width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
   padding: 7px 0;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
+  border-bottom: 3px solid #367315;
   background-color: #63a63e;
 
   color: #ffffff;
@@ -1210,11 +1320,15 @@ input[type="radio"].visually-hidden {
 .card-price-inbookmarks {
   color:#32425c;
   background:white;
-  border-bottom-color:#63a63e;
+  border: 3px solid #63a63e;
 }
 
 .card-price-buy:hover {
   background-color: #5fbb2d;
+}
+
+.card-price-inbookmarks:hover {
+  border: 3px solid #32425c;
 }
 
 .card-price-buy:active {
@@ -1222,7 +1336,29 @@ input[type="radio"].visually-hidden {
 }
 
 .card-price-inbookmarks:active {
-  color: rgba(50, 66, 92, 0.3);
+  color: rgb(50, 66, 92);
+  opacity: 0.3;
+}
+
+.card-price-buy::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 12px;
+
+  width: 15px;
+  height: 15px;
+
+
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+}
+
+.card-price-buy:hover::before {
+  opacity: 1;
 }
 
 .content-pages{
@@ -1313,7 +1449,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-cart::before,
-.inner-header-cart::before {
+.inner-header-cart::before{
   content: "";
 
   position: absolute;
@@ -1808,6 +1944,7 @@ input[type="radio"].visually-hidden {
   position: fixed;
   top: 50%;
   left: 50%;
+  display: none;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
