@@ -25,6 +25,8 @@ body {
   font-style: normal;
 
   color: #000000;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 a {
@@ -814,6 +816,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   color: #000000;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .main-company-list {
@@ -845,6 +849,8 @@ input[type="radio"].visually-hidden {
 }
 
 .content-map-link{
+  position: absolute;
+  bottom: 0;
   margin-top: 40px;
   width: 200px;
   background-color: #ee3643;
@@ -1555,6 +1561,7 @@ input[type="radio"].visually-hidden {
 }
 
 .content-contacts {
+  position: relative;
   width: 300px;
 }
 
@@ -1818,11 +1825,19 @@ input[type="radio"].visually-hidden {
 
 
 .services {
+  background-color: #f4f8f9;
+}
+
+.services-wrapper {
   width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  margin-bottom: 75px;
 }
+
+
 
 .header-services {
   width: 400px;
