@@ -614,11 +614,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-page-list {
+  display: flex;
+  flex-direction: row;
   position: absolute;
-  top: 170px;
-  left: 150px;
+  bottom: 38px;
+  left: 260px;
   list-style: none;
 }
+
 
 /*Блок популярные товары и производители*/
 
@@ -629,6 +632,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
+  padding-left: 25px;
 }
 
 .header-popular,
@@ -1242,10 +1246,10 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   font-weight: 700;
   color: #000000;
-  min-height:40px;
-  padding:0 25px;
-  margin-top:10px;
-  margin-bottom:15px;
+  min-height: 40px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .card-price-old,
@@ -1258,7 +1262,7 @@ input[type="radio"].visually-hidden {
 
 .card-price-old {
   min-height: 20px;
-  margin-top: 15px;
+  margin: 0;
   margin-bottom: 10px;
 }
 .card-price{
@@ -1269,8 +1273,8 @@ input[type="radio"].visually-hidden {
 .card-price {
   position: relative;
   width: 80px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   padding: 11px 30px;
   color: #ffffff;
   background: #ee3643;
@@ -1710,19 +1714,40 @@ input[type="radio"].visually-hidden {
 
 .promo-slider-left {
   position: absolute;
-  top: 140px;
-  left: 0;
-}
+  content: "";
+  top: 114px;
+  left: 25px;
+  width: 22px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  }
+
 
 .promo-slider-right {
   position: absolute;
-  top: 140px;
-  right: 0;
+  content: "";
+  top: 114px;
+  right: 25px;
+  width: 22px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
 }
 
 .promo-slider-link {
+  width: 111px;
   position: absolute;
-  bottom: 0;
+  bottom: 22px;
+  left: 25px;
+  padding: 10px 42px;
+  border-radius: 3px;
 }
 
 .popular,
@@ -1731,13 +1756,28 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 82px;
+}
+
+.popular {
+  margin-bottom: 0;
 }
 
 .header-popular,
 .header-brands {
   margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+}
+
+.header-popular-link,
+.header-brands-link {
+  position: absolute;
+  width: 151px;
+  top: 25px;
+  right: 24px;
+  text-align: center;
+  padding: 10px 51px;
+  border-radius: 3px;
 }
 
 .popular-list {
@@ -1755,6 +1795,7 @@ input[type="radio"].visually-hidden {
 .brands-list-logo {
   width: 220px;
   height: 145px;
+  border: 1px solid #eaeaea;
 }
 
 .services {
