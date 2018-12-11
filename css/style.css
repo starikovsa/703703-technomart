@@ -1793,10 +1793,21 @@ input[type="radio"].visually-hidden {
 }
 
 .brands-list-logo {
-  width: 220px;
-  height: 145px;
+  width: 218px;
+  height: 143px;
   border: 1px solid #eaeaea;
+  margin-bottom: 20px;
 }
+
+.brands-list-logo:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.brands-list-logo:active {
+  box-shadow: 0 4px 10px rgb(41, 52, 73);
+  opacity: 0.3;
+}
+
 
 .services {
   width: 940px;
