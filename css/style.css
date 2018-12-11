@@ -1797,7 +1797,15 @@ input[type="radio"].visually-hidden {
   height: 143px;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
+
+.list-logo-link{
+  display: block;
+  align-self:center;
+}
+
 
 .brands-list-logo:hover {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
