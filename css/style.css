@@ -433,6 +433,8 @@ input[type="radio"].visually-hidden {
   line-height: 17px;
   color: #ffffff;
   padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .header-navigation-link:hover {
@@ -948,6 +950,7 @@ input[type="radio"].visually-hidden {
 .content-map-link{
   position: absolute;
   bottom: 0;
+  left: 0;
   margin-top: 40px;
   width: 200px;
   background-color: #ee3643;
@@ -1927,8 +1930,10 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-left .promo-list {
+  width: 620px;
   display: flex;
   flex-wrap: wrap;
+  margin-right: 20px;
 }
 
 .promo-list {
