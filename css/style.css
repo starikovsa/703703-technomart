@@ -2270,6 +2270,16 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
 }
 
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -2280,4 +2290,10 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
   transform: translate(-50%, -50%);
   z-index: 100;
+}
+
+.modal-show {
+  display: block;
+  animation-name: zoom-in;
+  animation-duration: 0.8s;
 }
