@@ -26,7 +26,8 @@ body {
 
   color: #000000;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
+  white-space: pre-line;
 }
 
 a {
@@ -103,7 +104,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   vertical-align: top;
   background-color: #293449;
-  width: 44px;
+  width: 48px;
   height: 42px;
 }
 
@@ -146,6 +147,7 @@ input[type="radio"].visually-hidden {
   min-height: 42px;
   display: block;
   color: #ffffff;
+  padding-left: 20px;
 }
 
 .inner-header-cart-active{
@@ -155,6 +157,7 @@ input[type="radio"].visually-hidden {
 .main-header-checkout,
 .inner-header-checkout {
   background-color: #63a63e;
+  padding: 0;
 }
 
 .main-header-link:hover,
@@ -215,7 +218,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-title,
 .inner-header-title {
-  width: 192px;
+  width: 196px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -233,7 +236,7 @@ input[type="radio"].visually-hidden {
   width: 270px;
   min-height: 45px;
   margin-right: auto;
-  margin-left: 75px;
+  margin-left: 71px;
 }
 
 .header-contact-phone {
@@ -246,7 +249,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 0.4px;
   color: #ef3643;
   position: relative;
 }
@@ -280,9 +282,9 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   font-weight: 700;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 3px;
   padding-left: 10px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.3px;
 }
 
 
@@ -358,17 +360,17 @@ input[type="radio"].visually-hidden {
 }
 
 .login {
-  padding-top: 14px;
+  padding-top: 11px;
   padding-right: 27px;
   padding-bottom: 15px;
   padding-left: 48px;
 }
 
 .registry {
-  padding-top: 14px;
+  padding-top: 11px;
   padding-right: 25px;
   padding-bottom: 11px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 .logged-link {
@@ -650,6 +652,8 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 4px;
   padding-left: 25px;
 }
 
@@ -731,15 +735,16 @@ input[type="radio"].visually-hidden {
 
 .popular-list-item,
 .tool-list-item {
-  position:relative;
-  display:inline-block;
-  width:218px;
-  margin-right:20px;
-  margin-bottom:20px;
-  border:1px solid #ccc;
-  line-height:20px;
-  font-weight:bold;
-  text-align:center;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 218px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .card-image{
@@ -749,6 +754,8 @@ input[type="radio"].visually-hidden {
 
 .image-tool {
   max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .tool-list-item:nth-child(3n) {
@@ -772,7 +779,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   font-family: Cuprum, Arial, sans-serif;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 25px;
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
@@ -798,6 +805,10 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
   font-weight: 400;
   color: #32425c;
+  text-transform: uppercase;
+  padding-top: 5px;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px;
 }
 
 .header-services-description,
@@ -848,7 +859,7 @@ input[type="radio"].visually-hidden {
 
   display: block;
   width: 200px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -883,14 +894,14 @@ input[type="radio"].visually-hidden {
   top: 10px;
   left: 320px;
   height: 240px;
-  width: 375px;
+  width: 275px;
   z-index: 60;
 }
 
 .services-image {
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  top: 80px;
 }
 
 /*Блок компании и карта*/
@@ -903,7 +914,9 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  padding-top: 5px;
+  letter-spacing: -0.7px;
 }
 
 .main-company-list {
@@ -918,6 +931,10 @@ input[type="radio"].visually-hidden {
 
 .main-company-item {
   margin-bottom: 20px;
+}
+
+.main-company-item:last-child{
+  margin-bottom: 0;
 }
 
 .main-company-item::before {
@@ -945,7 +962,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-company-link {
-  margin-top: 40px;
+  margin-top: 35px;
   width: 169px;
   background-color: #ee3643;
   padding: 11px 10px 9px 41px;
@@ -961,6 +978,10 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   padding: 11px 37px 9px 63px;
   border-radius: 3px;
+}
+
+.content-contacts-map{
+  margin-top: 5px;
 }
 
 .main-button:hover {
@@ -987,15 +1008,23 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
+.main-footer-logo .logo-img,
+.inner-footer-logo .logo-img {
+  position: absolute;
+  top: 31%;
+  left: 19%;
+}
+
 .main-footer-address,
 .footer-address-link {
+  width: 320px;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
   color: #f3f7f9;
 
-  margin-top: 30px;
-  width: 320px;
+  margin-top: 27px;
+  padding-left: 4px;
 }
 
 .navigation-footer-list,
@@ -1042,12 +1071,13 @@ input[type="radio"].visually-hidden {
   width: 230px;
   margin: 0;
   margin-top: 39px;
+  padding-left: px;
 }
 
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -1078,6 +1108,10 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   margin-top: 0;
+}
+
+.main-footer-developed{
+  margin-left: 50px;
 }
 
 .footer-contact-link,
@@ -1479,6 +1513,7 @@ input[type="radio"].visually-hidden {
 
 
 .card-title {
+  width: 150px;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -1486,6 +1521,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
   min-height: 40px;
   padding: 0;
+  padding-left: 35px;
+  letter-spacing: -0.5px;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -1501,7 +1538,7 @@ input[type="radio"].visually-hidden {
 .card-price-old {
   min-height: 20px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .card-price{
   padding: 0;
@@ -1672,7 +1709,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 12px;
-  left: 13px;
+  left: 15px;
 
   width: 14px;
   height: 16px;
@@ -1707,7 +1744,7 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: 0 auto;
   padding-top: 46px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   display: flex;
   flex-direction: row;
 
@@ -1715,11 +1752,14 @@ input[type="radio"].visually-hidden {
 
 
 .main-header-user {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
 }
 
 .inner-header-user {
@@ -1757,7 +1797,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   box-shadow: inset 0 -5px 0 #293449;
 }
@@ -1823,11 +1863,11 @@ input[type="radio"].visually-hidden {
 .main-navigation-footer {
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
+  margin-left: 65px;
 }
 
 .navigation-footer-list {
-  width: 560px;
+  width: 550px;
   margin: 0 auto;
   margin-top: 40px;
   padding: 0;
@@ -1839,9 +1879,10 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-catalog-list {
-  width: 540px;
+  width: 525px;
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 33px;
+  margin-right: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -1858,8 +1899,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer-social {
-  margin-top: 39px;
-  width: 150px;
+  margin-top: 37px;
+  width: 132px;
+  padding-left: 40px;
 }
 
 
@@ -1870,7 +1912,7 @@ input[type="radio"].visually-hidden {
   margin-top: 39px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
@@ -1987,6 +2029,7 @@ input[type="radio"].visually-hidden {
   left: 25px;
   padding: 10px 42px;
   border-radius: 3px;
+  letter-spacing: 0.3px;
 }
 
 .popular,
@@ -2065,7 +2108,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 48px;
   margin-bottom: 75px;
 }
 
@@ -2076,7 +2119,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-block {
-  min-height: 330px;
+  min-height: 340px;
   display: flex;
   position: relative;
 }
