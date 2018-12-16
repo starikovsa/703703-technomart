@@ -742,14 +742,21 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   margin-bottom: 5px;
   border: 1px solid #ccc;
+  margin-bottom: 20px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
 }
 
+.popular-list-item {
+  margin-bottom: 0;
+}
+
 .card-image{
   width:218px;
   height:168px;
+  line-height: 168px;
+  overflow: hidden;
 }
 
 .image-tool {
@@ -786,11 +793,16 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
 }
 
+.content-description-title {
+  letter-spacing: 0.2px;
+  margin-top: 20px;
+}
+
 
 .content-description {
   padding: 0;
   padding-top: 45px;
-  padding-bottom: 55px;
+  padding-bottom: 67px;
   background-color: #f1f5f7;
 }
 
@@ -824,6 +836,7 @@ input[type="radio"].visually-hidden {
 .content-description-text {
   width: 940px;
   margin: 0 auto;
+  letter-spacing: 0.2px;
 }
 
 .services-list {
@@ -1141,8 +1154,8 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 25px;
-  width: 380px;
+  padding-top: 19px;
+  width: 355px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1206,9 +1219,9 @@ input[type="radio"].visually-hidden {
 
   background-color: #f2f6f8;
 
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 28px;
 }
 
 .content-filters-title {
@@ -1221,7 +1234,7 @@ input[type="radio"].visually-hidden {
 
   width: 202px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 18px;
@@ -1235,7 +1248,12 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+}
+
+.power-title {
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .price-cost-min,
@@ -1343,7 +1361,7 @@ input[type="radio"].visually-hidden {
 }
 
 .manufactures-list-option:last-child {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .manufactures-label,
@@ -1354,6 +1372,7 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
   user-select: none;
+  padding-bottom: 5px;
 }
 
 .manufactures-input-checkbox + .manufactures-label::before {
@@ -1418,6 +1437,8 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.1px;
 
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
@@ -1487,7 +1508,9 @@ input[type="radio"].visually-hidden {
 }
 
 .content-sorting-title{
-  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .content-sorting-list {
@@ -1655,6 +1678,10 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+}
+
+.pages-item {
+  margin-right: 6px;
 }
 
 
@@ -1948,7 +1975,9 @@ input[type="radio"].visually-hidden {
 .content-sorting-list {
   width: 460px;
   margin: 0;
+  padding: 0;
   padding-top: 10px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1966,6 +1995,13 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-bottom: 25px;
   border: none;
+}
+
+.filters-manufacturers {
+  padding-bottom: 15px;
+}
+.filters-power {
+  margin-bottom: 32px;
 }
 
 .filters-price,
@@ -2042,7 +2078,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .header-popular,
@@ -2130,6 +2166,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   list-style: none;
   margin: 0;
+  margin-top: 20px;
   margin-bottom: 60px;
   padding: 0;
 }
