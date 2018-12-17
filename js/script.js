@@ -45,12 +45,15 @@
     closeFeedback.addEventListener("click", function (evt) {
       evt.preventDefault();
       popupFeedback.classList.remove("modal-show");
+      popupFeedback.classList.remove("modal-error");
     });
 
     formFeedback.addEventListener("submit", function (evt) {
       if (!nameFeedback.value || !emailFeedback.value || !textFeedback) {
         evt.preventDefault();
-        console.log("Нужно заполнить поля");
+        popupFeedback.classList.remove("modal-error");
+        popupFeedback.offsetWidth = popupFeedback.offsetWidth;
+        popupFeedback.classList.add("modal-error");
       } else {
         if (isStorageSupport) {
           localStorage.setItem("nameFeedback", nameFeedback.value);
@@ -64,6 +67,7 @@
         evt.preventDefault();
         if (popupFeedback.classList.contains("modal-show")) {
           popupFeedback.classList.remove("modal-show");
+          popupFeedback.classList.remove("modal-error");
         }
       }
     });

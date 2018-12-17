@@ -2210,7 +2210,7 @@ input[type="radio"].visually-hidden {
 .modal-map {
   width: 940px;
   height: 446px;
-
+  transform: translateX(-19.5%);
   position: relative;
 }
 
@@ -2404,15 +2404,36 @@ input[type="radio"].visually-hidden {
   }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 150px;
+  left: 35%;
   display: none;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
-  transform: translate(-50%, -50%);
   z-index: 100;
 }
 
@@ -2422,3 +2443,6 @@ input[type="radio"].visually-hidden {
   animation-duration: 0.8s;
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
