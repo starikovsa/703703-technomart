@@ -1420,6 +1420,11 @@ input[type="radio"].visually-hidden {
   outline: 2px solid #0099FF;
 }
 
+.manufactures-input:disabled,
+.power-input:disabled {
+  opacity: 0.5;
+}
+
 .power-input-radio + .power-label::before {
   content: "";
   position: absolute;
