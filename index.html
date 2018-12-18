@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
+        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
@@ -29,7 +30,7 @@
 
           <div class="header-wrapper-middle">
             <div class="main-header-middle">
-            <h1 class="main-header-title"><span class="visually-hidden">«ТЕХНОМАРТ»</span>Интернет-магазин строительных материалов и инструментов для ремнота</h1>
+            <h1 class="main-header-title"><span class="visually-hidden">«ТЕХНОМАРТ»</span>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
             <address class="main-header-contact">
                 <p class="header-contact-phone"><a class="header-contact-link" href="tel:+7812550555">+7(812) 555-05-55</a></p>
@@ -70,12 +71,23 @@
                                         <a class="promo-list-link" href="tool.html">На все случаи</a>
                                         </li>
 
-                                        <li class="promo-list-item promo-list-slider">
-                                                <div class="promo-slider">
+                                        <li class="promo-list-item promo-list-slider"> <!--Слайдер-->
+                                              <div class="promo-slider">
+                                                <div class="promo-slider-header">
                                                   <h3 class="slider-title">Дрели</h3>
                                                   <p class="title-text">Соседям не радость!</p>
-                                                </div> <!--Слайдер-->
+                                                </div>
                                                 <img src="img/slider.jpg" width="620" height="266" alt="Дрели">
+                                              </div>
+
+                                              <div class="promo-slider visually-hidden">
+                                                  <div class="promo-slider-header">
+                                                    <h3 class="slider-title">Перфораторы</h3>
+                                                    <p class="title-text">Настоящие мужские игрушки</p>
+                                                  </div>
+                                                  <img src="img/slider1.jpg" width="620" height="266" alt="Дрели">
+                                                </div>
+
                                                 <a class="promo-slider-link main-button" href="tool.html">Открыть каталог</a>
 
                                                 <button class="promo-slider-left" type="button" tabindex="0"><span class="visually-hidden">Предыдущий слайд&lt;</span></button>
@@ -264,11 +276,34 @@
                         <li class="services-list-warranty"><a class="services-list-link">Гарантия</a></li>
                         <li class="services-list-credit"><a class="services-list-link">Кредит</a></li>
                     </ul>
+
+                    <div class="services-delivery">
                     <div class="list-delivery-description">
                             <h3 class="delivery-description-title">Доставка</h3>
                             <p class="delivery-description-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,поднимая его на ваш этаж!</p>
                     </div>
                     <img src="img/services-delivery.png" class="services-image" width="468" height="261" alt="Доставка">
+                    </div>
+
+                      <div class="services-guarantee visually-hidden">
+                        <div class="list-guarantee-description">
+                                <h3 class="guarantee-description-title">Гарантия</h3>
+                                <p class="guarantee-description-text">Если купленный у нас товар поломается или заискрит,
+                                    а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                                    Дом уж восстановите как-нибудь сами.</p>
+                        </div>
+                        <img src="img/services-guarantee.png" class="services-image" width="389" height="283" alt="Гарантии">
+                      </div>
+
+                      <div class="services-credit visually-hidden">
+                          <div class="list-credit-description">
+                                  <h3 class="credit-description-title">Кредит</h3>
+                                  <p class="credit-description-text">Залезть в долговую яму стало проще!
+                                      Кредитные консультанты придут вам на помощь.</p>
+                          </div>
+                          <a class="services-credit-link main-button" href="credit.html">Отправить заявку</a>
+                          <img src="img/services-credit.png" class="services-image" width="465" height="285" alt="Гарантии">
+                        </div>
                 </div>
               </div>
             </section>
@@ -385,7 +420,7 @@
 
         <section class="modal-map modal"> <!--Полная карта-->
           <h2 class="visually-hidden">Наш адрес</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1544767235020" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1544767235020" width="940" height="446" style="border:0" allowfullscreen></iframe>
           <img src="img/map-popup.jpg" width="940" height="446" alt="Наш адрес ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <button class="modal-close" type="button" tabindex="0"><span class="visually-hidden">Закрыть</span></button>
         </section>
