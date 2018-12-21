@@ -1515,9 +1515,9 @@ input[type="radio"].visually-hidden {
   outline: 2px solid #0099FF;
 }
 
-.manufactures-input:disabled,
-.power-input:disabled {
-  opacity: 0.5;
+.manufactures-input:disabled + .manufactures-label::before,
+.power-input-radio:disabled + .power-label::before  {
+  opacity: 0.3;
 }
 
 .power-input-radio + .power-label::before {
@@ -2287,10 +2287,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-manufacturers {
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 .filters-power {
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 .filters-price,
