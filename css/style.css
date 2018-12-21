@@ -752,7 +752,7 @@ input[type="radio"].visually-hidden {
       justify-content: space-around;
 }
 
-.card-actions{
+.card-actions {
   position: absolute;
   top: 6px;
   left: 0;
@@ -986,6 +986,7 @@ input[type="radio"].visually-hidden {
   height: 240px;
   width: 275px;
   z-index: 60;
+  overflow: hidden;
 }
 
 .services-image {
