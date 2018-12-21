@@ -98,9 +98,8 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
   border: 0px solid;
   color: #ffffff;
-  border: none;
   padding: 0;
-  outline: 0;
+
 }
 
 .header-search-label {
@@ -226,7 +225,7 @@ input[type="radio"].visually-hidden {
 
 .header-wrapper-middle {
   background-color: #f1f5f7;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
 }
 
 .main-header-middle,
@@ -272,6 +271,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ef3643;
   position: relative;
+  letter-spacing: -0.3px;
 }
 
 .header-contact-link {
@@ -286,7 +286,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 11px;
-  left: 15px;
+  left: 13px;
 
   width: 19px;
   height: 19px;
@@ -333,11 +333,10 @@ input[type="radio"].visually-hidden {
 .orders {
   background: 0 0;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .separator{
-  font-family: Arial;
   background: 0 0;
   margin: 0 auto;
   padding-top: 5px;
@@ -345,11 +344,11 @@ input[type="radio"].visually-hidden {
 }
 
 .cabinet {
-  margin-right: 75px;
+  margin-right: 71px;
 }
 
 .orders {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .orders-link,
@@ -440,6 +439,14 @@ input[type="radio"].visually-hidden {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='17' viewBox='0 0 21 17'%3E%3Cg fill='%2332425c'%3E%3Cpath fill='%2332425c' d='M21 8.5L12.125 0v6h-6v5h6v6z'/%3E%3Cpath fill='%2332425c' d='M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
+.logged-link:focus::before{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18'%3E%3Cpath fill='%2332425c' d='M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z'/%3E%3C/svg%3E%0A");
+}
+
+.logout-link:focus::after{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='17' viewBox='0 0 21 17'%3E%3Cg fill='%2332425c'%3E%3Cpath fill='%2332425c' d='M21 8.5L12.125 0v6h-6v5h6v6z'/%3E%3Cpath fill='%2332425c' d='M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
 .logged-link:active::before{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18'%3E%3Cpath fill='%23c5c5c5' d='M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z'/%3E%3C/svg%3E%0A");
 }
@@ -458,10 +465,10 @@ input[type="radio"].visually-hidden {
 .header-navigation-link {
   font-size: 17px;
   line-height: 17px;
+  display: block;
+  padding: 19px 29px;
+  text-decoration: none;
   color: #ffffff;
-  padding: 20px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .header-navigation-link:hover {
@@ -498,7 +505,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   margin-bottom: 20px;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-left: 25px;
 }
 
@@ -552,8 +559,6 @@ input[type="radio"].visually-hidden {
 .promo-slider-header {
   margin: 0;
   position: absolute;
-  color: #fff;
-  padding: 0;
 
   top: 20px;
   left: 24px;
@@ -630,6 +635,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.1);
 
   margin-top: 13px;
+  margin-left: 2px;
   padding-top: 10px;
   padding-right: 22px;
   padding-bottom: 10px;
@@ -675,7 +681,7 @@ input[type="radio"].visually-hidden {
           flex-direction: row;
   position: absolute;
   bottom: 36px;
-  left: 46%;
+  left: 48%;
   width: 160px;
   height: 10px;
   padding: 0px;
@@ -692,6 +698,7 @@ input[type="radio"].visually-hidden {
 
 .header-popular-title,
 .header-brands-title {
+  width: 500px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
@@ -699,7 +706,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 4px;
-  padding-left: 25px;
+  padding-left: 27px;
 }
 
 .header-popular,
@@ -747,7 +754,7 @@ input[type="radio"].visually-hidden {
 
 .card-actions{
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 0;
   width: 218px;
   height: 88px;
@@ -799,7 +806,6 @@ input[type="radio"].visually-hidden {
   vertical-align: bottom;
   width: 218px;
   margin-right: 20px;
-  margin-bottom: 5px;
   border: 1px solid #ccc;
   margin-bottom: 20px;
   line-height: 20px;
@@ -812,17 +818,13 @@ input[type="radio"].visually-hidden {
 }
 
 .card-image{
-  width:218px;
-  height:168px;
+  width: 218px;
+  height: 170px;
   line-height: 168px;
   overflow: hidden;
 }
 
-.image-tool {
-  max-width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-}
+
 
 .tool-list-item:nth-child(3n) {
   margin-right: 0;
@@ -884,7 +886,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   padding-top: 5px;
   letter-spacing: 0.3px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .header-services-description,
@@ -897,10 +899,18 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.delivery-description-text {
+  margin-top: 0px;
+}
+
 .content-description-text {
   width: 940px;
   margin: 0 auto;
-  letter-spacing: 0.2px;
+}
+
+.description-text {
+  margin: 0;
+  padding: 0;
 }
 
 .services-list {
@@ -981,7 +991,7 @@ input[type="radio"].visually-hidden {
 .services-image {
   position: absolute;
   right: 0px;
-  top: 80px;
+  top: 77px;
 }
 
 /*Блок компании и карта*/
@@ -994,8 +1004,8 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   margin: 0;
-  margin-bottom: 25px;
-  padding-top: 5px;
+  margin-bottom: 27px;
+
   letter-spacing: -0.7px;
 }
 
@@ -1035,8 +1045,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: #ee3643;
-
-  outline: 0;
 
   display: inline-block;
   vertical-align: middle;
@@ -1099,14 +1107,20 @@ input[type="radio"].visually-hidden {
 
 .main-footer-address,
 .footer-address-link {
-  width: 320px;
+  width: 324px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.33;
   font-style: normal;
   color: #f3f7f9;
 
   margin-top: 27px;
-  padding-left: 4px;
+  padding-left: 2px;
+}
+
+.footer-address {
+  margin: 0;
+  margin-top: 1px;
+  padding: 0;
 }
 
 .navigation-footer-list,
@@ -1153,7 +1167,7 @@ input[type="radio"].visually-hidden {
   width: 230px;
   margin: 0;
   margin-top: 39px;
-  padding-left: 4px;
+  letter-spacing: 0.1px;
 }
 
 .footer-social-list {
@@ -1234,7 +1248,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 19px;
+  padding-top: 21px;
   width: 355px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1290,7 +1304,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-wrapper {
  width: 940px;
  margin: 0 auto;
- margin-bottom: 25px;
+ margin-bottom: 23px;
 }
 
 .inner-content-title {
@@ -1336,6 +1350,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 18px;
+}
+
+.price-title {
+  margin-bottom: 15px;
 }
 
 .power-title {
@@ -1540,7 +1558,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   padding: 0;
-  outline: none;
+
 }
 
 .filters-form-button:hover {
@@ -1564,10 +1582,18 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.sorting-item-type {
+  margin-left: 12px;
+}
+
+.sorting-item-functional {
+  margin-left: 17px;
+}
+
 .sorting-list-button-up {
   position: absolute;
   content: "";
-  top: 15px;
+  top: 13px;
   right: 49px;
 
   width: 11px;
@@ -1580,7 +1606,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-list-button-down {
   position: absolute;
-  top: 15px;
+  top: 13px;
   right: 17px;
 
   width: 11px;
@@ -1644,7 +1670,7 @@ input[type="radio"].visually-hidden {
   padding-left: 35px;
   letter-spacing: -0.5px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .card-price-old,
@@ -1669,7 +1695,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 80px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 11px 30px;
   color: #ffffff;
   background: #ee3643;
@@ -1761,13 +1787,25 @@ input[type="radio"].visually-hidden {
 }
 
 .content-pages {
-
-  width: 940px;
-  margin: 0 auto;
-
+  margin: 0;
   bottom: 0;
+  left: 0;
 }
 
+.content-pages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 60px;
+  padding: 0;
+}
 
 .pages-list-link {
   font-size: 13px;
@@ -1777,10 +1815,44 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.pages-item {
-  margin-right: 6px;
+
+.pages-list-link {
+  display: inline-block;
+  min-width: 18px;
+  min-height: 38px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  margin-right: 8px;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
+.pages-list-link:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pages-list-link:active {
+  border: 1px solid #ee3643;
+}
+
+.pages-list-link-current {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.pages-link-next {
+  min-width: 118px;
+}
 
 /*Сетки*/
 /*Хедер*/
@@ -1909,7 +1981,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
   margin-left: 70px;
   padding: 0;
 }
@@ -1917,15 +1988,13 @@ input[type="radio"].visually-hidden {
 .inner-header-user {
   width: 300px;
   height: 45px;
-  margin: 0 auto;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-  margin: 0;
-
   list-style: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1948,31 +2017,18 @@ input[type="radio"].visually-hidden {
 
 .header-navigation-list {
   width: 940px;
-  min-height: 60px;
-  margin: 0 auto;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-shadow: inset 0 -5px 0 #293449;
-          box-shadow: inset 0 -5px 0 #293449;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+  background-color: #32425c;
+  box-shadow: 0 5px 0 0 #293449;
+  overflow: hidden;
 }
 
 
 .header-navigation-item {
-  position: relative;
-  text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
 
 /*Блок о компании и карта*/
@@ -1985,7 +2041,7 @@ input[type="radio"].visually-hidden {
 .index-columns {
   width: 940px;
   margin: 0 auto;
-  margin-bottom: 85px;
+  margin-bottom: 87px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2249,7 +2305,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0 auto;
   margin-bottom: 33px;
-  padding-top: 59px;
+  padding-top: 60px;
 }
 
 .promo-left .promo-list {
@@ -2286,7 +2342,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   content: "";
   top: 114px;
-  right: 25px;
+  right: 20px;
   width: 22px;
   height: 40px;
   border: none;
@@ -2338,11 +2394,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 82px;
+  margin-bottom: 65px;
 }
 
 .popular {
-  margin-bottom: 5px;
+  margin: 0 auto;
 }
 
 .header-popular,
@@ -2422,7 +2478,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 48px;
+  padding-top: 65px;
   margin-bottom: 75px;
 }
 
@@ -2438,58 +2494,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-}
-
-
-.content-pages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  padding: 0;
-}
-
-
-.pages-list-link {
-  display: inline-block;
-  min-width: 18px;
-  min-height: 38px;
-  padding: 0 10px;
-  margin-right: 5px;
-  font-family: PT Sans, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 38px;
-  text-align: center;
-  vertical-align: middle;
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #e5e5e5;
-  text-decoration: none;
-  border-radius: 3px;
-}
-
-.pages-list-link:hover {
-  border: 1px solid #bdc6ca;
-}
-
-.pages-list-link:active {
-  border: 1px solid #ee3643;
-}
-
-.pages-list-link-current {
-  color: #ffffff;
-  background-color: #ee3643;
-}
-
-.pages-link-next {
-  min-width: 118px;
+  margin-top: 5px;
 }
 
 .modal-map {
@@ -2583,7 +2588,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #dee3e4;
   font-size: 13px;
   padding: 10px 16px 10px;
-  outline: none;
+
   border-radius: 3px;
 }
 
@@ -2597,7 +2602,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #dee3e4;
   font-size: 13px;
   padding: 13px 16px;
-  outline: none;
+
   border-radius: 3px;
 }
 
