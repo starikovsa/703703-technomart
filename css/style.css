@@ -744,9 +744,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .popular-list {
@@ -754,17 +752,11 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   padding: 0;
   margin: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .card-actions {
@@ -830,7 +822,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.popular-list-item:last-child {
+.popular-list-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1674,20 +1666,62 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.sorting-item-type {
-  margin-left: 12px;
+.wrapper-sorting-tool {
+  width: 700px;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.sorting-item-functional {
-  margin-left: 17px;
+.content-sorting {
+  width: 700px;
+  min-height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
+.content-sorting-list {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 60px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.sorting-item:nth-child(1) .sorting-list-button {
+  margin-right: 71px;
+}
+
+.sorting-item:nth-child(2) .sorting-list-button {
+  margin-right: 65px;
+}
+
 
 .sorting-list-button-up {
   position: absolute;
   content: "";
   top: 13px;
   right: 49px;
-
+  margin: 0;
+  padding: 0;
   width: 11px;
   height: 10px;
 
@@ -1700,7 +1734,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 13px;
   right: 17px;
-
+  margin: 0;
+  padding: 0;
   width: 11px;
   height: 10px;
 
@@ -1725,6 +1760,7 @@ input[type="radio"].visually-hidden {
 }
 
 .content-sorting-title {
+  width: 252px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -2307,52 +2343,7 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
 }
 
-.wrapper-sorting-tool {
-  width: 700px;
-  margin-left: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 
-.content-sorting {
-  width: 700px;
-  min-height: 38px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.content-sorting-list {
-  width: 460px;
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
-
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 
 .filters-price,
 .filters-manufacturers,
@@ -2519,11 +2510,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .brands-list-logo {
@@ -2531,12 +2519,17 @@ input[type="radio"].visually-hidden {
   height: 143px;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
+  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.brands-list-logo:nth-child(4n) {
+  margin-right: 0;
 }
 
 .list-logo-link {
