@@ -246,7 +246,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-title,
 .inner-header-title {
-  width: 196px;
+  width: 200px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -264,7 +264,7 @@ input[type="radio"].visually-hidden {
   width: 270px;
   min-height: 45px;
   margin-right: auto;
-  margin-left: 71px;
+  margin-left: 67px;
 }
 
 .header-contact-phone {
@@ -864,7 +864,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .content-description-title {
@@ -876,7 +876,7 @@ input[type="radio"].visually-hidden {
 .content-description {
   padding: 0;
   padding-top: 45px;
-  padding-bottom: 67px;
+  padding-bottom: 69px;
   background-color: #f1f5f7;
 }
 
@@ -886,19 +886,23 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.delivery-description-title {
+.delivery-description-title,
+.guarantee-description-title,
+.credit-description-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #32425c;
   text-transform: uppercase;
-  padding-top: 5px;
   letter-spacing: 0.3px;
+  margin: 0;
   margin-bottom: 25px;
 }
 
 .header-services-description,
 .delivery-description-text,
+.guarantee-description-text,
+.credit-description-text,
 .content-description-text {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
@@ -907,8 +911,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.delivery-description-text {
-  margin-top: 0px;
+.delivery-description-text,
+.guarantee-description-text,
+.credit-description-text {
+  margin: 0;
+  margin-bottom: 31px;
 }
 
 .content-description-text {
@@ -921,21 +928,20 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.services-list {
-  position: absolute;
-  top: 50px;
-  left: 0px;
+.services-list-btn {
+  position: relative;
   width: 240px;
   margin: 0px;
+  margin-right: 80px;
   padding: 0px;
   z-index: 80;
   list-style: none;
 }
 
-.services-list::after {
+.services-list-btn::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 100px;
   right: 0px;
   width: 10px;
   height: 272px;
@@ -944,7 +950,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.services-list-link {
+.services-item-link {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
@@ -965,14 +971,14 @@ input[type="radio"].visually-hidden {
           box-shadow: inset 0 -1px 0 0 #293449;
 }
 
-.services-list-link:hover,
-.services-list-link:focus {
+.services-item-link:hover,
+.services-item-link:focus {
   color: #ffffff;
   background-color: #293449;
 }
 
 
-.services-list-link:active {
+.services-item-link:active {
   color: #32425c;
 
   background-color: #ffffff;
@@ -980,7 +986,7 @@ input[type="radio"].visually-hidden {
           box-shadow: inset 0 0 0 0 #293449;
 }
 
-.services-list-link-active {
+.services-item-link-active {
   color: #32425c;
 
   background-color: #ffffff;
@@ -988,20 +994,83 @@ input[type="radio"].visually-hidden {
           box-shadow: inset 0 0 0 0 #293449;
 }
 
-.list-delivery-description {
-  position: absolute;
-  top: 10px;
-  left: 320px;
-  height: 240px;
+.list-delivery-description,
+.list-guarantee-description,
+.list-credit-description {
   width: 275px;
+  min-height: 240px;
   z-index: 60;
-  overflow: hidden;
 }
 
-.services-image {
+.delivery {
+  position: relative;
+  z-index: 1;
+  width: 275px;
+}
+
+.delivery::after {
+  content: "";
   position: absolute;
-  right: 0px;
-  top: 77px;
+  z-index: -1;
+  right: -344px;
+  top: -38px;
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/services-delivery.png");
+  background-repeat: no-repeat;
+}
+
+.guarantee {
+  position: relative;
+  z-index: 1;
+  width: 378px;
+}
+
+.guarantee::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -344px;
+  top: -38px;
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/services-guarantee.png");
+  background-repeat: no-repeat;
+}
+
+.credit {
+  position: relative;
+  z-index: 1;
+}
+
+.credit::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -344px;
+  top: -65px;
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/services-credit.png");
+  background-repeat: no-repeat;
+}
+
+.services-credit-link {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 41px;
+  padding-left: 41px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border: 0;
+  border-radius: 3px;
 }
 
 /*Блок компании и карта*/
@@ -1289,7 +1358,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   content: "";
   top: 3px;
-  left: 32px;
+  left: 30px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1300,7 +1369,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   content: "";
   top: 3px;
-  left: 75px;
+  left: 70px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1311,7 +1380,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   content: "";
   top: 3px;
-  left: 100px;
+  left: 95px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1367,10 +1436,14 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 18px;
 }
 
 .price-title {
+  margin-bottom: 15px;
+}
+
+.manufacturers-title {
+  padding-top: 3px;
   margin-bottom: 15px;
 }
 
@@ -1442,7 +1515,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-line-bage-right {
-  left: 152px;
+  left: 160px;
 }
 
 .filtres-price-slider {
@@ -2091,6 +2164,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-wrapper-bot {
+  min-height: 109px;
   background-color: #293449;
 }
 
@@ -2487,6 +2561,9 @@ input[type="radio"].visually-hidden {
 
 
 .services {
+  min-height: 457px;
+  padding-top: 63px;
+  margin-bottom: 80px;
   background-color: #f4f8f9;
 }
 
@@ -2496,27 +2573,28 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 65px;
-  margin-bottom: 75px;
 }
 
 
 
 .header-services {
   width: 400px;
+  margin-bottom: 50px;
+  padding-top: 5px;
 }
 
 .services-block {
-  min-height: 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  flex-direction: row;
   margin-top: 5px;
+
 }
 
 .modal-map {
@@ -2721,17 +2799,6 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
 }
 
-@-webkit-keyframes zoom-in {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-            transform: scale3d(0.3, 0.3, 0.3);
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
 @keyframes zoom-in {
   from {
     opacity: 0;
@@ -2743,36 +2810,12 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
-  }
-}
 
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translate(-50%, -50%);
   }
 
   10%,
@@ -2780,28 +2823,27 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translate(-51%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translate(-49%, -50%);
   }
 }
 
 .modal {
   position: fixed;
-  top: 150px;
-  left: 35%;
+  top: 50%;
+  left: 50%;
   display: none;
   color: #000000;
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
           box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, -50%);
   z-index: 100;
 }
 
